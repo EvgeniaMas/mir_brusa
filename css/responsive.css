@@ -1,0 +1,778 @@
+@media (max-width: 991px) {
+#catalog {
+    display: none;
+    
+}
+#mobile_catalog {
+    display: block;
+    min-height: 900px;
+}
+
+/*Мобильный каталог*/
+.tab {
+  position: relative;
+  margin-bottom: 1px;
+  width: 100%;
+  color: #000;
+  overflow: hidden;
+}
+input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+label {
+  position: relative;
+  display: block;
+  padding: 0 0 0 1em;
+  background-color: #4277d5;
+  font-weight: bold;
+  line-height: 3;
+  cursor: pointer;
+}
+
+.tab-content {
+  max-height: 0;
+  overflow: hidden;
+  background: #fff;
+  transition: max-height .35s;
+}
+
+.tab-content p {
+  margin: 1em;
+}
+/* :checked */
+input:checked ~ .tab-content {
+  max-height: 10em;
+}
+/* Icon */
+label::after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  width: 3em;
+  height: 3em;
+  line-height: 3;
+  text-align: center;
+  transition: all .35s;
+}
+input[type=checkbox] + label::after {
+  content: "+";
+}
+input[type=radio] + label::after {
+  content: "\25BC";
+}
+input[type=checkbox]:checked + label::after {
+  -webkit-transform: rotate(315deg);
+          transform: rotate(315deg);
+}
+input[type=radio]:checked + label::after {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+}
+
+}
+
+
+/*@media (max-width: 1600px) {
+.vertical_text {
+opacity: 0.2;
+}
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1200px){
+.navbar-nav > li > a{
+	vertical-align:middle;
+	line-height:1.5rem;
+	padding:1rem 1rem 0 0;
+	font-family:"Proxima Nova Regular";
+	font-size:1rem!important;
+	color:#fff;
+}
+}
+@media (max-width: 1023px) {
+img.header__logo {
+position: relative;
+}
+.navbar-default .navbar-nav > li > a {
+text-align: center;
+}
+}
+@media only screen and ( max-width: 991px) {
+
+.titles {
+font-size: 1.5rem;
+font-family: "Proxima Nova Regular";
+line-height: 1.5rem;
+}
+span.grey_text {
+color: rgb(85, 85, 85);
+} 
+.present__tag {
+display: inline-block;
+max-width: 210px;
+}
+.green_block {
+height: auto;
+height: 100%;
+}
+.beton__description_title {
+margin-top: 50px;
+}
+#test {
+background-image: url(../img/test_bbg.png);
+background-repeat: no-repeat;
+background-position: bottom center;
+background-size: cover;
+min-height: auto;
+}
+img.arrows {
+display: block;
+width: 30px;
+height: 30px;
+position: absolute;
+top: 50%;
+background-color: rgba(52,107,5, 0.7);
+opacity: 1;
+}
+img.arrows.arrow_right {
+right: -20px;
+}
+img.arrows.arrow_left {
+left: -20px;
+}
+.header_house,
+#examples,
+.present__bg
+{
+display: none;
+}
+.test__bg2 {
+opacity: 0;
+}
+#examples_m{
+display: block;
+}
+.present__title
+{
+position: relative;
+}
+.company__description {
+font-size: 17px;
+line-height: 30px;    
+width: 90%;
+margin: auto;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+.image_container {
+max-width: 250px;
+margin:auto;
+padding-right: 0;
+padding-left: 0;
+}
+.review_image {
+display: block;
+height: 244px;
+position: absolute;
+max-width: 250px;
+width: 100%;
+}
+.button_block {
+min-height: 10rem;
+}
+.examples__title {
+line-height: 30px;
+margin-top: 30px;
+}
+.svg_icons {
+max-width: 150px;
+max-height: 150px;
+}
+.present__price {
+font-size: 18px;
+margin-top: 20px;  
+font-family: "Proxima Nova Bold"; 
+}
+.present__tag {
+margin-top: -20px;
+position: relative;
+z-index: 3;
+max-width: 170px;
+}
+.present__button {
+margin-top: 20px;
+}
+.present__image{
+display: block;
+margin:auto;
+max-height: 250px;
+}
+.advantages__title,
+h2.process__title {
+font-size: 26px;
+line-height: 28px;
+margin-bottom: 40px;
+margin-top: 40px;
+}
+.present__sections {
+position: relative;
+min-height: auto;
+}
+.present__title {
+font-size: 27px;
+
+line-height: 30px;
+}
+.prices_block {
+width: 230px;
+margin:auto;
+position: relative;
+}
+.present__price {
+text-align: center;
+}
+.old-price {
+text-align: center;
+display: inline-block;
+}
+.vertical_text {
+opacity: 0.2;
+}
+.beton__mobile2 {
+display: block;
+}
+.beton__mobile1 {
+display: none;
+}
+.orders__question {
+margin-top: 20px;
+font-size: 20px;    
+line-height: 30px;
+}
+.breaks {
+display: none;
+}
+.header__activity {
+text-align: center;
+font-size: 28px;
+line-height: 30px;
+margin:auto;
+margin-top: 23%;
+}
+
+#header {
+height: auto;
+min-height: 800px;
+padding-bottom: 20px;
+
+}
+span.result1 {
+margin-left: 0;
+}
+.result {
+font-size: 18px;
+color: rgb( 102, 172, 42 );
+text-align: left;
+display: block;
+padding-right: 0;
+}
+.review__container {
+padding-bottom: 22px;
+}
+.process__text {
+font-size: 20px;
+font-family: "Proxima Nova Regular";
+color: rgb(81, 79, 82);
+width: 90%;
+line-height: 28px;
+text-align: justify;
+margin: auto;
+}
+}
+@media (min-width: 992px) and  (max-width: 1199px)  {
+.select_house__button {    
+width: 80%;
+max-width: 280px;
+display: block;
+font-size: 16px;    
+}
+.test__image {
+display: block;
+max-width: 181px;
+}
+.select_house__block {
+width: 100%;
+}
+.select_house__text {
+margin-left: 15px;
+margin-right: 15px;
+}
+.select__icon {
+max-width: 50px;
+display: inline-block;
+}
+.select_house__description {
+margin-left: 10px;
+margin-right: 10px;
+}
+}
+@media (max-width: 767px) {
+.navbar-default .navbar-toggle{
+display: none;
+}
+.process_image {
+    display: none;
+}
+
+.process_image2{
+    display: block;
+    margin:auto;
+    max-height: 120px;
+    width: 100vw;
+}
+
+.navbar-brand{
+display: block;
+text-align: center;
+width: 100%;
+}
+a.header__phone{
+    margin-top: 2rem;
+    display: block;
+text-align: center;
+}  
+a.callback_link{
+
+border: none;
+text-decoration: underline;
+display: block;
+text-align: center;
+width: 100%;
+}
+
+span.result {
+text-align: center;
+}  
+.example__text.mobile {
+top: 30px;
+padding-left: 10px;
+}
+.beton__description_title {
+    font-size: 1.5rem;
+    line-height: 1.6rem;   
+}
+.sum_notchanged {
+display: none;
+}
+#header {
+padding-bottom: 2rem;
+}
+.green_block {
+    display: none;
+}
+
+.beton__container {
+	padding-right:0;
+	padding-left: 0;
+}
+img.beton__image {    
+    max-width: 18rem;
+}
+.phone_container  {
+position: relative;
+width: 100%;
+padding-top: 10px;
+}
+#orders {
+padding-bottom: 30px;
+}
+.header__order.callback {
+margin-bottom: 30px;
+margin-top: 30px;
+font-size: 20px;}
+.header__phone {
+color: rgb(85, 85, 85);
+text-align: right;
+}
+.callback_link {
+color: rgb(85, 85, 85);
+float: right;
+margin-bottom: 20px;
+border-bottom: 1px solid rgb(85, 85, 85);
+}
+a.header__phone:hover,
+a.header__order.callback:hover,
+a.header__phone:visited,
+a.header__order.callback:visited,
+a.header__phone:active,
+a.header__order.callback:active,
+{
+color: rgb(85, 85, 85)!important;
+}
+.orders__form {
+margin-top: 30px;
+}
+.old-price, .roubles {
+font-size: 28px;
+}
+.header__questions {
+margin-top: 30px;
+margin-bottom: 30px;
+}
+.footer__callback {
+margin:auto;
+margin-top: 20px;
+}
+.footer__phone,
+.footer__privacy, .footer__link {
+display: block;
+text-align: center;
+}
+.breaks2 {
+display: none;
+}
+.count, .questions {
+line-height: 25px;
+}
+.count {
+padding-top: 10px;
+}
+img.test__image {
+    display: none;
+}
+.answer_blocks.small,
+.answer_block.big{
+height:4.5rem;
+
+max-width:22.875rem;
+background-color:#7cc33f;
+border-radius:0.625rem;
+box-shadow:0 0.3125rem 1.313rem 0.3125rem rgba(0, 0, 0, .5);
+position:relative;
+z-index:7;
+padding-bottom:1.25rem;
+margin:auto;
+margin-bottom: 1rem;}
+div.checkbox{
+    padding-top: 0.9rem;
+}
+.answer_block.big.square {
+   height:4.9rem; 
+}
+span.answer__text.square {
+    
+   
+    width: 55%;
+    margin:auto;
+    line-height: 1.2rem;
+    margin-top: 20px;
+    display: inline-block;
+    
+}
+}
+@media only screen and ( max-width: 500px) {
+
+
+ 
+
+.svg_icons {
+max-width: 120px;
+max-height: 120px;
+}
+img.examples_slides.mobile {
+min-height: 400px;
+display: block;
+}
+.titles {
+font-size: 1.3rem;
+font-family: "Proxima Nova Regular";
+line-height: 1.3rem;
+}
+
+.col-md-12.slider__container {
+	padding-left: 0;
+	padding-right: 0;
+
+}
+.example__description {
+    font-size: 1rem;
+    font-family: "Proxima Nova Regular";
+    color: rgb(255, 255, 255);
+    line-height: 1.1rem;
+}
+.example__text.mobile {
+    top: 20px;
+    
+}
+}
+@media only screen and ( max-width: 767px) and (orientation:portrait){
+.process__text,
+.beton__titleextra
+ {
+    font-size: 1rem;
+    line-height: 1.3rem;
+}    
+.container-fluid{
+padding-right: 0!important;
+padding-left: 0!important;
+}
+
+.button_block {
+    min-height: 4rem;
+}
+
+
+.header__order.callback,
+.select_house__button,
+button.present__button,
+.header__order.callback,
+a.footer__callback,
+#msform .action-button
+{
+    width: 11rem;
+    max-width: 11rem;
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 1rem;
+    
+}
+.formname input[type=submit] {
+width: 14rem;
+    max-width: 14rem;
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 1rem;
+}
+#orders {
+    padding-bottom: 1rem;
+}
+.prices_block {
+    width: 200px;
+    
+}
+
+
+
+.present__image {
+   
+    max-height: 200px;
+}
+
+
+.select_house__button_icon {
+    
+    padding-right: 0.5rem;
+    max-height: 1.8rem;
+}
+
+
+.reviewer__name, .review__short {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    
+}
+
+.review__container {
+    padding-bottom: 1rem;
+}
+
+.review_image {
+    display: block;
+    height: 210px;   
+    max-width: 210px;
+    
+}
+
+.advantages__title {
+    width: 80%;
+    margin:auto;
+}
+
+
+.present__button {
+    display: block;
+    margin:auto;
+}
+
+.footer__logo {
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+    
+}
+
+.reviewer__name,
+.review__short {
+    font-size: 1.2rem;
+    margin-top: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.count {
+    font-size: 1.5rem;
+    padding-top: 0px;
+    line-height: 1.8rem;
+    
+}
+
+
+
+
+.questions {    
+    font-size: 1.1rem;
+    line-height: 1.3rem; 
+}
+span.select_house__icon {
+    max-width:2.75rem;
+    display:block;
+   margin:auto;
+margin-bottom: 1rem;
+}
+
+.select_house__text{
+    font-size: 1.1rem;
+    display: block;
+    text-align: center;
+}
+
+.select_house__description {
+    font-size: 0.9rem;
+    text-align: left;
+    color: #414243;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    
+}
+
+
+
+.select_house__title,
+.advantages__title,
+ h2.process__title,
+.beton__title,
+.present__title,
+h2.company__title,
+.examples__title {
+
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    line-height: 1.7rem;
+    margin-bottom: 2rem;
+}
+
+.header__activity {
+    
+    font-size: 1.7rem;
+    line-height: 1.7rem;
+}
+.header__questions {
+    font-size: 1.2rem;    
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+.callback_link,
+a.header__phone {    
+    font-size: 1rem;
+}
+
+.svg_icons {
+    max-width: 80px;
+}
+
+ 
+
+
+.advantages__text {
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+img.beton__image {
+  max-width: 12rem;
+}
+
+img.examples_slides.mobile {
+min-height: 350px;
+display: block;
+padding: 10px;
+}
+.questions__container {
+    padding-left: 0!important;
+    padding-right: 0!important;
+   
+}
+.titles {
+    font-size: 1rem;    
+    line-height: 1.1rem;
+}
+
+button.close {    
+    right: 0.625rem;
+    top: 0.625rem;
+    width: 2rem;
+    height: 2rem;    
+}
+.orders__form{padding:1rem;}
+
+
+
+.select_house__button {
+    width: 90%;
+    height: 2.625rem;
+    line-height: 1rem;
+    max-width: 17rem;
+    line-height: 2.625rem;
+   
+}
+.select_house__text {
+    font-size: 1.2rem;    
+    line-height: 1.3rem;
+    }
+
+img.arrows.arrow_left {
+    left: 5px;
+}
+
+
+img.beton__image {    
+    max-width: 16rem;
+}
+
+
+img.arrows.arrow_right {
+    right: 5px;
+}
+
+.example__title.mobile {
+    font-size: 1rem;
+}
+#examples_m.container-fluid {
+	padding-right: 0;
+	padding-left: 0;
+}
+.example__description {
+    font-size: 0.9rem;    
+    line-height: 1rem;
+}
+span.answer__text {
+    font-size: 0.9rem;
+   
+    
+}
+span.answer__text.square{
+     padding-top: 5px;
+    display: inline-block;
+}
+}
+
+@media only screen and ( max-width: 300px) {
+.container-fluid {
+    min-width: 290px;
+    overflow-x: scroll;
+
+}
+}*/
+    
