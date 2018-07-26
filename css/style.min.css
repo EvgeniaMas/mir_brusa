@@ -9,7 +9,12 @@
 @font-face {
     font-family: "Proxima Nova Light";
     src: url("../fonts/Light/ProximaNova-Light.eot");
-    src: url('../fonts/Light/ProximaNova-Light.eot?#iefix') format('embeddedopentype'), url("../fonts/Light/ProximaNova-Light.woff2") format("woff2"), url("../fonts/Light/ProximaNova-Light.woff") format("woff"), url("../fonts/Light/ProximaNova-Light.ttf") format("truetype"), url("../fonts/Light/ProximaNova-Light.otf") format("opentype"), url('../fonts/Light/ProximaNova-Light.svg#svgProximaNova-Light') format('svg');
+    src: url('../fonts/Light/ProximaNova-Light.eot?#iefix') format('embeddedopentype'), 
+    url("../fonts/Light/ProximaNova-Light.woff2") format("woff2"), 
+    url("../fonts/Light/ProximaNova-Light.woff") format("woff"),
+     url("../fonts/Light/ProximaNova-Light.ttf") format("truetype"),
+      url("../fonts/Light/ProximaNova-Light.otf") format("opentype"),
+      url('../fonts/Light/ProximaNova-Light.svg#svgProximaNova-Light') format('svg');
     font-style: normal;
     font-weight: normal;
 }
@@ -24,19 +29,29 @@
 
 @font-face {
     font-family: "Proxima Nova Semibold";
-    src: url("../fonts/Semibold/ProximaNova-Bold.eot");
-    src: url('../fonts/Semibold/ProximaNova-Bold.eot?#iefix') format('embeddedopentype'),
-    url("../fonts/Semibold/ProximaNova-Bold.woff2") format("woff2"),
-    url("../fonts/Semibold/ProximaNova-Bold.woff") format("woff"),
-    url("../fonts/Semibold/ProximaNova-Bold.ttf") format("truetype"), 
-    url("../fonts/Semibold/ProximaNova-Bold.otf") format("opentype"),
-    Semiboldurl('../fonts/Semibold/ProximaNova-Bold.svg#ProximaNova-Bold') format('svg');
+    src: url("../fonts/Semibold/ProximaNova-Semibold.eot");
+    src: url('../fonts/Semibold/ProximaNova-Semibold.eot?#iefix') format('embeddedopentype'),
+    url("../fonts/Semibold/ProximaNova-Semibold.woff2") format("woff2"),
+    url("../fonts/Semibold/ProximaNova-Semibold.woff") format("woff"),
+    url("../fonts/Semibold/ProximaNova-Semibold.ttf") format("truetype"), 
+    url("../fonts/Semibold/ProximaNova-Semibold.otf") format("opentype"),
+     url('../fonts/Semibold/ProximaNova-Semibold.svg#svgProximaNova-Semibold') format('svg');;
     font-style: normal;
     font-weight: normal;
 }
 
-
-
+@font-face {
+    font-family: "Proxima Nova Thin";
+    src: url("../fonts/Thin/ProximaNovaCond-Thin.eot");
+    src: url('../fonts/Thin/ProximaNovaCond-Thin.eot?#iefix') format('embeddedopentype'),
+    url("../fonts/Thin/ProximaNovaCond-Thin.woff2") format("woff2"),
+    url("../fonts/Thin/ProximaNovaCond-Thin.woff") format("woff"),
+    url("../fonts/Thin/ProximaNovaCond-Thin.ttf") format("truetype"), 
+    url("../fonts/Thin/ProximaNovaCond-Thin.otf") format("opentype"),
+     url('../fonts/Thin/ProximaNovaCond-Thin.svg#svgProximaNovaCond-Thin') format('svg');;
+    font-style: normal;
+    font-weight: normal;
+}
 
 
 
@@ -68,10 +83,10 @@ body {
 }
 
 .gradient{
-    background-image:url(../img/gradient.jpg);
-    background-repeat:no-repeat;
+    background-image:url(../img/gradient.png);
+    background-repeat:repeat;
     background-position:center;
-    background-size:cover;
+    background-size:contain;
 
 }
 
@@ -110,12 +125,19 @@ body {
 }*/
 
 .titles {
-    font-size: 1.75rem;
-    font-family: "Proxima Nova Regular";
-    line-height: 1.75rem;
+    font-size: 2rem;
+    color: #fff;
+    line-height: 2.2rem;
     text-align: center;
     width: 80%;
     margin: auto;
+}
+
+.titles span{
+    display: block;
+    font-size: 1.125rem;
+    font-family: "Proxima Nova Semibold";
+
 }
 
 .form_inputs {
@@ -139,16 +161,7 @@ body {
     margin-right: 2rem;
 }
 
-.review_image {
-    display: block;
-    height: 16rem;
-    max-width: 15.38rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    box-shadow: -0.125rem -0.25rem 0.4375rem 0.0625rem #909090;
-    overflow: hidden;
-}
+
 
 img.examples_slides {
     display: inline-block;
@@ -338,29 +351,30 @@ div.present__body {
 .orders__question span {
     color: #7cc33f;
 }
-
+*/
 .orders__form {
-    border-radius: 0.5rem;
-    background-color: rgb(255, 255, 255);
+    
+    background-color: transparent;
     box-shadow: 0 0 1.313rem 0 rgba(0, 0, 0, 0.4);
     max-width: 19rem;
-    max-height: 15.63rem;
-    padding: 1.25rem;
+    max-height: 13rem;    
     display: block;
+    padding-top: 0.5rem;
     margin: auto;
-    margin-top: 4.25rem;
+    
 }
 
-.orders__form.modal_form {
-    border-radius: 1.25rem;
-    background-color: #fff;
+.orders__form.modal_form {    
+    background-color: transparent;
     box-shadow: none;
     max-width: 19rem;
     max-height: 18.13rem;
-    padding: 1.25rem;
+    padding: 1rem;
     display: block;
     margin: auto;
-    margin-top: 1.75rem;
+    border: 8px solid #fff;
+    border-top:none;
+   
 }
 
 input.orders__inputs {
@@ -368,13 +382,14 @@ input.orders__inputs {
     border-width: 0.125rem;
     border-color: rgb(133, 133, 133);
     border-style: solid;
-    opacity: 0.4;
+    
     width: 90%;
     margin: auto;
     margin-bottom: 1.375rem;
     margin-top: 0.625rem;
     padding-left: 1.875rem;
     display: block;
+    border-radius: 20px;
 }
 
 i.fa {
@@ -392,10 +407,11 @@ i.fa {
 
 i.fa + input {
     padding-left: 1.625rem;
-}*/
+}
 
 .formname input[type=checkbox] {
     display: none;
+
 }
 
 .formname input[type=checkbox] + label {
@@ -405,8 +421,8 @@ i.fa + input {
     cursor: pointer;
     font-size: 0.6rem;
     line-height: 0.9375rem;
-    color: #333333;
-    opacity: 0.8;
+    color: #fff;
+   
     display: block;
 }
 
@@ -418,7 +434,7 @@ i.fa + input {
     line-height: 1.375rem;
     left: -1.875rem;
     border: 0.0625rem solid #808080;
-    background-color: #fff;
+    background-color: #4277d5;
 }
 
 .formname input[type=checkbox]:checked + label:before {
@@ -540,6 +556,8 @@ input[type="tel"]::placeholder {
 
 #technology {
     min-height:520px;
+    
+    
 }
 
 #guarantee {
@@ -582,14 +600,27 @@ input[type="tel"]::placeholder {
 
 
 
-
 .guarantee__block {
     max-width: 21.88rem;
-    height: 9.25rem;
+    min-width: 19rem;
+    height: 10rem;
     border: 0.625rem solid #4277d5;
     padding: 1rem;
     position: relative;
+    margin-top: 2.5rem;
 }
+
+.guarantee__block.left{
+    float: right;
+    margin-right: 30px;
+    box-sizing: border-box;
+}
+.guarantee__block.right{
+    float: left;
+    margin-left: 30px;
+    box-sizing: border-box;
+}
+
 
 .black_block.near_block {
 position: absolute;
@@ -679,8 +710,7 @@ left: 26%;
 }
 .footer__logo {
     position: absolute;
-   top: 0.8125rem;
-    left: 0;
+   top: 0.8125rem;   
     left: 3.875rem;
     max-height: 4rem;
 }
@@ -805,7 +835,7 @@ img.white_element {
     max-width: 21.88rem;
 }
 
-#advantages {
+/*#advantages {
     position: relative;
     min-height: 32.81rem;
     background: url(../img/icon_bg.jpg) no-repeat;
@@ -843,7 +873,7 @@ img.green_element {
     color: #62a32a;
     text-transform: uppercase;
 }
-
+*/
 .svg_icons {
     display: block;
     margin: auto;
@@ -915,7 +945,7 @@ h2.process__title {
     margin: auto;
 }
 
-#select_house {
+/*#select_house {
     background: url(../img/house_bg2.png) no-repeat;
     background-size: cover;
     background-position: center;
@@ -1013,16 +1043,47 @@ h2.process__title {
     margin-right: 1.813rem;
     display: block;
 }
-
+*/
 #test {
     background-image: url(../img/calculator/calc.jpg);
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-position: center left;
-    background-size: cover;
+    background-size: contain;
     min-height: 57.44rem;
     position: relative;
 }
 
+.social_icons__block {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+
+img.social_icon {
+display: inline-block;
+max-width: 60px;
+margin-left: 5%;
+transition: .2s;
+}
+
+
+img.social_icon:hover {
+opacity: 0.9;
+transform: scale(1.09);
+}
+
+.form__container__test {
+    width: 90%;
+    max-width: 350px;
+    margin:auto;
+    margin-top: 3rem;
+   border: 8px solid #fff;
+   padding: 1.125rem;
+}
+
+h2.get__account {
+    color:#fff;
+}
 
 
 
@@ -1056,7 +1117,7 @@ input[type=radio] {
     display: none;
 }
 
-label.test__label {
+/*label.test__label {
     color: #fff;
     padding-right: 1.25rem;
 }
@@ -1120,7 +1181,7 @@ span.answer__text {
     padding-bottom: 1.25rem;
     margin: auto;
 }
-
+*/
 .count
 
  {
@@ -1130,6 +1191,7 @@ span.answer__text {
   line-height: 1.2;
   text-align: center;
   margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 
@@ -1169,11 +1231,11 @@ span.answer__text {
     display: none;
 }
 
-#msform fieldset.double_section {
+#msform fieldset.visible {
     display: block;
 }
 
-#msform .action-button {
+/*#msform .action-button {
     cursor: pointer;
     display: inline-block;
     margin: 0.9375rem;
@@ -1189,11 +1251,11 @@ span.answer__text {
     text-align: center;
     transition-duration: 1s;
 }
-
-#msform .action-button:hover {
+*/
+/*#msform .action-button:hover {
     background-color: #457f14;
 }
-
+*/
 .fs-title {
     font-size: 1rem;
     display: block;
@@ -1499,14 +1561,14 @@ a#previous.action-button {
 
 button.close {
     position: absolute;
-    right: 0.625rem;
-    top: 0.625rem;
-    width: 2.5rem;
-    height: 2.5rem;
+    right: -2.2rem;
+    top: -1rem;
+    width: 2rem;
+    height: 2rem;
     background-image: url('../img/close.png');
     background-size: contain;
     background-repeat: no-repeat;
-    z-index: 9999;
+    z-index: 9999999999999999999999999999999;
     opacity: 1;
 }
 
@@ -1580,19 +1642,28 @@ button.close {
 }
 
 .titles.test {
-    width: 80%;
+    width: 90%;
     margin: auto;
 }
 
-.container-fluid#header__top {
-    max-width: 1920px;
+
+
+.container-fluid.max_fluid_container,
+.max_fluid_container{
+    max-width: 120rem;
+    margin:auto;
 }
+
+
 
 #header__top {
     min-height: 8.875rem;
-    max-width: 120rem;
+    
     position: relative;
     margin: auto;
+    box-shadow:4px 6px 30px 0px #e5e5e5;
+   -webkit-box-shadow:4px 6px 30px 0px #e5e5e5;
+   -moz-box-shadow:4px 6px 30px 0px #e5e5e5;
 }
 
 .header__logo {
@@ -1600,7 +1671,7 @@ button.close {
     max-height: 5.375rem;
     position: absolute;
     top: 0.8125rem;  
-    left: 3.875rem;
+     margin-left: 3.875rem;
 }
 
 .header__top_title {
@@ -1624,14 +1695,14 @@ button.close {
     
 }
 
-.contacts__content {
+/*.contacts__content {
 border-left: 1px solid #e2e2e2;
 padding: 0;
 height: 77px;
-}
+}*/
 .header__phone {
    /* font-size: 1.5rem;*/
-   font-size: 1.3rem;
+   font-size: 1.1rem;
     font-family: "Proxima Nova Semibold";
     text-align: left;
     display: block;
@@ -1640,16 +1711,15 @@ height: 77px;
     margin-top: 3.188rem;
 }
 a.callback_link {
-    border: none;
-    border-bottom: 0.0625rem solid #fff;
+    border: none;    
     background-color: transparent;
     font-size: 1.5rem;
     position: relative;
     margin-bottom: 1.25rem;
     display: inline-block;
     float: right;
-    color: #4277d5;
-    text-decoration: underline;
+    color: #4277d5; 
+    border-bottom: 1px solid #dae2f5;
     display: inline-block;
 }
 
@@ -1661,7 +1731,7 @@ a.callback_link {
     position: relative;
     margin-top: 14%;
     color: #333;
-    z-index: 6777;
+    /*z-index: 6777;*/
 }
 
 .header__activity span {
@@ -1680,8 +1750,11 @@ a.callback_link {
 
 
 .main_screen__image {
+    width: 90%;
+
     max-width: 744px;
     margin-top: 23px;
+    margin:auto;
     display: block;
 }
 
@@ -1811,8 +1884,13 @@ background-color: #fff;
 background-image: none;
 color: #4277d5;
 border: 1px solid #4277d5;
-
+transform: scale(1.1);
 }
+
+/*.on {
+  color: red;
+  opacity: 0;
+}*/
 
  
 /*.lines_picture {
@@ -1885,6 +1963,11 @@ p.image__border:after {
 
 
 /*Второй блок - использование */
+#usage,
+#design{
+    padding-bottom: 3rem;
+}
+
 
 .usage__contant {
     position: relative;
@@ -1901,10 +1984,16 @@ p.image__border:after {
   z-index: 8;
   padding: 1.375rem;
 }
+
+.usage__block.design {
+    margin-top: 4rem;
+}
+
+
 .usage__grid {
     max-width:  8.188rem;
     position: absolute;
-    bottom: 0;
+    bottom: -2rem;
     right: -4rem;
     z-index: 7;
 
@@ -1958,12 +2047,26 @@ z-index: 1;
 }
 
 span.number {
+    display: inline-block;
+    width: 4.5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    text-align: center;
     font-size: 2.063rem;
+    margin-right: 1rem;
     color:#fff;
-    position: absolute;
-    top: 5px;
-   right: -10px;  
-    z-index: 3;
+    position: relative;  
+    background-image: url(../img/step_number.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+span.number.grey {
+    background-image: url(../img/grey.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 
 
@@ -1993,10 +2096,12 @@ padding-left: 0!important;
 
 
 img.showroom_image{
-    display: inline-block;
-   
+    display: block;   
     max-height: 37.88rem;
     box-sizing: border-box;
+    width: 97%!important;
+    margin:auto;
+    max-width: 360px;
 }
 
 /*Четвертый блок - запись на просмотр*/ 
@@ -2148,16 +2253,25 @@ img.sign_slides {
 #catalog {
     min-height: 700px;
     overflow-y: hidden;
+    padding-bottom: 84px;
 }
 
-.catalog__subtitle {
+span.opened_tab {
+    display: none;
+}
+
+
+.catalog__subtitle,
+.select__subtitle {
    font-size: 1.25rem;
  text-align: center;
   margin:auto;
   color: rgb(27, 28, 31); 
 }
-
-
+.catalog__subtitle.thin{
+    font-family: "Proxima Nova Thin";
+    letter-spacing: 0.05rem;
+}
 
 .catalog__card {
  background-color: #fff;
@@ -2165,12 +2279,16 @@ img.sign_slides {
  padding: 0.3125rem;
  width: 95%;
  margin:auto;
+ margin-bottom: 9px;
  max-width: 17.63rem;
  position: relative;
  padding-bottom: 0.6875rem;
- /*min-height:  17.69rem;*/
-
 }
+
+.catalog__card.big {
+    min-height: 270px;
+}
+
 
 .catalog__grid {
     position: absolute;
@@ -2200,8 +2318,7 @@ img.sign_slides {
   margin-top: 2.563rem;
 }
 
-.price span,
-.extra_info span { float: right; }
+
 .extra_info {
  font-size: 1rem;  
   color: rgb(27, 28, 31);
@@ -2209,6 +2326,25 @@ img.sign_slides {
   text-transform: uppercase;
   line-height: 1.2;
   text-align: left;
+}
+.price span,
+.extra_info span
+{ 
+    float: right;
+ }
+.price span {
+    text-transform: lowercase;
+}
+
+
+p.roubles {
+ font-size: 1rem;  
+  color: rgb(27, 28, 31);
+   font-family: "Proxima Nova Light";
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: right;
+  margin-top:10px;
 }
 
 
@@ -2262,29 +2398,47 @@ img.sign_slides {
 /*Примеры дизайн-проектов
 */
 
+.design__subtitle {
+    font-size: 1.5rem;
+
+}
+
+
 
 img.design__imаge {
     max-width: 290px;
     display: block;
-
+    margin-top: 20%;
+    position: relative;
+    z-index: 4;
 }
+
+img.design__grid {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    z-index: 2;
+}
+
 
 .vertical_text {
     font-size: 1rem;
-    color:#000;
-    font-family: "Proxima Nova Regular";
+    color:#000;    
     color: #000;
     text-align: left;
     line-height: 1.1rem;
     -webkit-transform: rotate(90deg); 
     transform: rotate(90deg);
-    position: relative;
-   /* background-color: green;*/
+    position: relative;  
     display: block;
     height: 100%;
-    padding-left: 240px;
-    text-align: left;
-  
+    padding-left: 25%;
+    text-align: left;  
+}
+
+
+.vertical_text span{
+    font-family: "Proxima Nova Bold";
 }
 /*
 .images__block {
@@ -2305,7 +2459,7 @@ display: none;
 /*Блок с картой*/ 
 
 #map {
-    height: 704px;
+    min-height: 704px;
     margin-top: 2.688rem;
     position: relative;
     
@@ -2336,29 +2490,23 @@ display: none;
 
 #custom_map {
     display: block;
-    /*width: 50%;*/
-   /* float: right;*/
-    
-    /*adding-left: 0;*/
-    /*min-height: 400px; */
-   height: 704px;  
-   float: right;
-   position: absolute;
-   right: 0;
-   overflow-x: hidden;
+    width: 49%;   
+    float: right; 
+    height: 704px;  
 
-   /* background-color: green;*/
 }
 
 
-.map_image {
+.map_image {  
   
-   height: 100%;
-   height: 704px;
+    height: 704px;
+    width: 49%;
+    padding-right: 10px;
     background-image:url(../img/map_showroom.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    float: left;
    /* display: block;
     width: 100%;*/
    /* max-width: 300px;*/
@@ -2371,70 +2519,13 @@ display: none;
     -webkit-filter: grayscale(100%);
 }
 
-/*Технология */
-.technology__title_container {
-    margin:auto;
-    width: 80%;
-}
-
-
-.technology__title {
-    display: inline-block;   
-  font-size: 2.125rem;  
-  color: rgb(51, 47, 46);
-  text-align: center;  
-  margin:auto;
-  margin-top: 2.063rem;
-
-}
-
-
-.technology__icon{
-display: inline-block;
-    float:left;
-    width: 1rem;
-    height: 1rem;
-    margin-top: 4px;
-    margin-right:10px;
-    line-height: 32px;
-    background-image: url("../img/grey_cross.png");
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.technology__image_container {
-    width: 80%;
-    max-width: 375px;
-    max-height: 417px;
-    background-color: red;
-    min-height: 300px;
-    position: relative;
-    margin:auto;
-}
-
-.technology_image {
-    display: block;
-    max-width: 275px;
-}
-
-.technology_image.up {
-    position: absolute;
-    top: -2rem;
-    left: -2rem;
-    z-index: 4;
-}
-
-.technology_image.down {
-    position: absolute;
-    bottom: -2rem;
-    right: -2rem;
-    z-index: 3;
-}
 
 
 #select_product {
-    min-height:  52.75rem;
+   /* min-height:  52.75rem;*/
+   min-height:  40.75rem;
+   padding-bottom: 109px;
+
 }
 
 .select_product_bg {
@@ -2444,6 +2535,10 @@ display: inline-block;
     margin:auto;  
 }
 
+.select_item {
+    margin-top: 47px;
+}
+
 
  img.schema_image {
  display: block;
@@ -2451,8 +2546,17 @@ display: inline-block;
  margin:auto;  
  position: relative;
  z-index: 2;
+}
 
- }
+.schema_image_mobile {
+  display: none;
+}
+
+.defect_image {
+    max-height: 563px;
+    margin:auto;
+}
+
 
  .defect__text {
   font-size: 1.125rem; 
@@ -2465,23 +2569,36 @@ display: inline-block;
 .defect__text1{
 position: absolute;
 top: 22%;
-left: 5%;
+left: 2%;
 z-index: 3;
 }
 
 .defect__text2{
 position: absolute;
-top: 24%;
-right: 5%;
+top: 27%;
+right: 13%;
 z-index: 3;
 }
 
 .defect__text3{
 position: absolute;
-bottom: 3%;
-left: 5%;
+bottom: 4%;
+left: 3%;
 z-index: 3;
 }
+
+
+p.select__subtitle { 
+  font-size: 24px;
+  font-family: "Proxima Nova";
+  color: rgb(27, 28, 31);
+  margin-bottom: 37px;
+  line-height: 26px;
+}
+
+
+
+
 
 
 /*Опросник*/ 
@@ -2491,11 +2608,13 @@ width: 90%;
 margin:auto;
 /*background-color: orange;*/
 height: 500px;
+margin-bottom: 6.25rem;
 }
 
 .plan__image {
 width: 100%;
 margin:auto;
+
 /*height: 480px;*/
 /*margin-top: 10px;*/
 /*max-width: 900px;*/
@@ -2508,6 +2627,7 @@ margin:auto;
   font-family: "Proxima Nova Semibold";
   border-left: 2px solid #fff;
   margin-left:  0.875rem;
+  padding-left: 0.875rem;
   
 }
 
@@ -2522,47 +2642,25 @@ margin:auto;
  
 }
 .variants_text {
-     font-size: 1.125rem;
+  font-size: 1.125rem;
   font-family: "Proxima Nova Light";
   color: rgb(255, 255, 255);
   display: inline-block;
   margin-right: 5%;
-  margin-top: 6.25rem;
+  
 }
 
-#less50 {
-    position: absolute;
-    top: 30px;
-    left:60px;  
-    max-height: 450px; 
-    width: 400px;
-    opacity: 0;
-   /* height: 500px;*/
 
+
+
+
+
+
+
+#slider{
+    padding-bottom: 73px;
 }
 
-#less20 {
-    position: absolute;
-    top: 35px;
-    left:60px;  
-    max-height: 450px; 
-    width: 140px;
-    opacity: 0;
-   
-}
-
-#more100
-
-/*,
-#more150,*/
-/*#more100*/ {
-    position: absolute;
-    top: 35px;
-    left:60px;  
-    max-height: 450px; 
-    /*width: 140px;*/
-    /*opacity: 0;*/
-}
 
 .slider_title {
     font-size: 34px;
@@ -2570,6 +2668,8 @@ margin:auto;
   color: rgb(27, 28, 31);
   line-height: 1.2;
   text-align: center;
+  margin-bottom: 48px;
+
  
 }
 
@@ -2577,7 +2677,7 @@ margin:auto;
    font-size: 24px;  
   color: rgb(34, 36, 41);
   text-align: left;
-  margin-top: 139px;
+  margin-top: 109px;
 
   
 }
@@ -2606,4 +2706,311 @@ a.slider_backcall {
   text-align: center;
   font-family: "Proxima Nova Bold";
   margin-top: 71px;
+}
+
+
+
+a.next{
+     display: block;
+     transition: .2s;    
+  background-image: -moz-linear-gradient( 90deg, rgb(66,119,213) 0%, rgb(86,137,228) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(66,119,213) 0%, rgb(86,137,228) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(66,119,213) 0%, rgb(86,137,228) 100%);
+  width: 292px;
+  height: 55px;
+  display: inline-block;
+  font-size: 1rem;  
+  color: #fff;
+  line-height: 55px;
+  border-radius: 20px;
+  text-align: center;
+  font-family: "Proxima Nova Bold";
+  margin-top: 71px;   
+}
+
+
+a.back {
+background-color: transparent;
+border: none;
+color:#fff;
+height: 55px;
+margin:auto;
+line-height: 55px;
+margin-top: 40px;
+display: block;
+}
+
+#less20 {
+    position: absolute;
+    top: 35px;
+    left:60px;  
+    max-height: 450px; 
+    width: 140px;
+    /*z-index: 2; */
+    display: none;    
+}
+
+#less50 {
+    position: absolute;
+    top: 30px;
+    left:60px;  
+    max-height: 450px; 
+    width: 280px;
+    display: none;
+     /* z-index: 3; */
+  
+
+}
+#more50 {
+    position: absolute;
+    top: 35px;
+    left:60px;  
+    max-height: 450px;  
+    display: none;     
+    /*z-index: 4;*/   
+}
+
+#less100 {
+   position: absolute;
+    top: 35px;
+    left:60px;  
+    max-height: 450px; 
+    /*width: 140px;*/
+    /*z-index: 5;*/
+    display: none; 
+      
+}
+#more150,
+#more100 {
+    position: absolute;
+    top: 35px;
+    left:60px;  
+    max-height: 450px;  
+    display: none;  
+}
+#more100 {
+    z-index: 6;
+}
+#more150 {
+    z-index: 7;
+}
+
+
+#less20.displayed,
+#less50.displayed,
+#more50.displayed,
+#less100.displayed,
+#more100.displayed,
+#more150.displayed
+{
+    display: block;
+}
+
+.variants_text.active {
+    font-size: 1.3rem;
+}
+
+
+.type__card, 
+.color__card {
+    background-color: #fff;
+    max-width: 254px;
+    min-height: 158px;
+    width: 90%;
+    margin:auto;
+    border: 3px solid transparent;
+   
+    margin-bottom: 30px;
+    margin-top: 30px;
+    display: inline-block;
+}
+
+.type__card.active, 
+.color__card.active {
+border: 3px solid red;
+}
+
+.type__image, 
+.color__image {
+    display: block;
+    margin:auto;
+    height: 144px;
+    width: 154px;
+    margin-top: -28px;
+}
+
+
+ol.carousel-indicators.horizontal_sliders{
+    bottom: -3rem;
+   
+}
+
+/*Последствия неправильного выбора брусчатки*/
+
+.select__gallery {
+    position: relative;
+   
+}
+
+
+/*Технология */
+#technology {
+    padding-bottom: 75px;
+}
+
+.technology__title_container {
+    margin:auto;
+    width: 80%;
+}
+
+
+.technology__title {
+    display: inline-block;   
+  font-size: 2.125rem;  
+  color: rgb(51, 47, 46);
+  text-align: center;  
+  margin:auto;
+  margin-bottom: 59px;
+  margin-top: 2.063rem;
+
+}
+
+
+.technology__icon{
+display: inline-block;
+    float:left;
+    width: 1rem;
+    height: 1rem;
+    margin-top: 4px;
+    margin-right:10px;
+    line-height: 32px;
+    background-image: url("../img/grey_cross.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.technology__image_container {
+    width: 80%;
+    max-width: 375px;
+    max-height: 417px;
+   /* background-color: red;*/
+    min-height: 300px;
+    position: relative;
+    margin:auto;
+}
+
+.technology_image {
+    display: block;
+    max-width: 275px;
+}
+
+.technology_image.up {
+    position: absolute;
+    top: -2rem;
+    left: -2rem;
+    z-index: 4;
+}
+
+.technology_image.down {
+    position: absolute;
+    bottom: -2rem;
+    right: -2rem;
+    z-index: 3;
+}
+
+
+
+.consequences{    
+  font-size: 24px;
+  font-family: "Proxima Nova";
+  color: rgb(255, 255, 255);
+  position: absolute;
+  z-index: 4;
+  left: 23px;
+  top: 36px;
+}
+
+.cons__grid {
+    position: absolute;
+    top: 0;
+    left: 5px;
+    width: 60%;
+    max-width: 263px;
+    z-index: 3;
+    opacity: 0.3;
+}
+
+.concurrent_block {
+    margin-left: 52px;
+}
+
+.concurent__title {
+  font-size: 28px;  
+  color: rgb(43, 43, 43); 
+  display: inline-block;
+
+}
+
+.usage__text.concurent {
+
+  font-size: 21px;  
+  color: rgb(43, 43, 43);
+  padding-left: 42px;
+  
+
+}
+
+.company__title {   
+  font-size: 28px;  
+  color: rgb(73, 124, 215);
+  margin-bottom: 36px;
+  display: inline-block;
+}
+
+.usage__text.company{
+font-size: 21px; 
+  color: rgb(43, 43, 43);
+  margin-bottom: 1.125rem;
+  padding-left: 42px;
+}
+
+.usage__text.company span{
+  font-size: 21px; 
+  color: rgb(43, 43, 43);
+  font-family: "Proxima Nova Semibold";
+  }
+
+.technology__logo {
+    display: inline-block;
+    max-height: 71px;
+    margin-left: 39px;
+}
+
+/*.usage__icon.five {
+    background-image: none;
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+}*/
+
+.usage__line.complete {
+    position: absolute;
+    top: -4rem;
+    right: -3rem;
+}
+
+span.usage__text.days {
+    font-size: 1.5rem;
+    color: #4277d5;
+     font-family: "Proxima Nova Semibold";
+     padding-left: 1rem;
+
+}
+
+span.usage__text.days:before{
+    content: '5  ';
+    font-size: 2rem;
+    color: #4277d5;
+     font-family: "Proxima Nova Semibold";
 }

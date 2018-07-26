@@ -12,42 +12,56 @@
 <title>Строительство домов из газобетона</title>
 <!-- Bootstrap -->
 <link rel="stylesheet" href="css/bootstrap.css">
-      <style type="text/css">#thank-page{ height:100vh; width:100vw; background-image:url('img/gradient3.png');background-size:contain; background-repeat:repeat; color:#000; font-size:26px; } .thanks, .thanks_text{ text-align:center; } .thanks{text-transform: uppercase; margin-top:10px; font-size:26px; } .thanks_text{ font-size:22px; text-transform: uppercase;}img.thank_tab {
+<link rel="stylesheet" type="text/css" href="css/style.min.css">
+      <style type="text/css">
+
+      #thank-page{ height:100vh; width:100vw; background-image:url('img/thank.jpg');background-size:cover; background-repeat:no-repeat; color:#fff; font-size:26px; } .thanks, .thanks_text{ text-align:center; } .thanks{ margin-top:10px; font-size:2rem; } .thanks_text{ font-size:1.125rem;   font-family: "Proxima Nova Semibold";}img.thank_tab {
             display: block;position: relative;
             margin-top: 10%; width: 80%; margin:auto;
       }.container.thanks {
-            position: absolute;
-            top: 28%;
+            position: relative;
+            margin-top: 12%;
             text-align: center;
             width: 100vw;
       }
-      img.thank__image {
-            display: block;
-            max-width: 300px;
+
+      .button_container {
+            width: 90%;
             margin:auto;
+            max-width: 376px;
+            border: 8px solid #4277d5;
+            height: 260px;
+            border-top: none;
+      }
+      .thank__image {
+            display: block;
+            max-height: 113px;
+            margin:auto;
+            margin-top: 1.125rem;
       }
 
-
-@media (max-width: 991px){
-img.thank_tab {
-      display: none;
-}
-}
+       #back_webpage {
+            max-width: 288px;
+       }
 
 
 
       </style></head>
-       <body id="thank-page">
-            <!-- <div class="grey_layer"></div> -->
-            <img class="thank_tab" src="img/present_bg.png" alt="Фон">  
+       <body id="thank-page">           
+             
       	   <div class="container thanks">                    		
-      		<h3 class="thanks">Спасибо!</h3>
-                  <p class="thanks_text"> Мы скоро с Вами свяжемся!</p>
-                  <img class="thank__image" src="img/present.png" alt="Дом из газобетона">
+      		<h3 class="thanks">Спасибо за заявку!</h3>
+                  <p class="thanks_text"> Мы рады что Вы с нами!</p>
+
+                  <div class="button_container">
+                  <img class="thank__image" src="img/white_logo.png" alt="Логотип">
+
+                  <!--  <a id="back_webpage" href="index.html" class="next button__hover action-button"> Вернуться к сайту</a>  -->
+
+             </div>
             </div>
 
-            <script>setTimeout(function(){window.location.href="index.html";},3000); </script>
-
+            
       </body>
 
       </html>

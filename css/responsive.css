@@ -1,18 +1,210 @@
+@media only screen and ( max-width: 1200px) {
+.navbar-nav > li > a {    
+    line-height: 1.2rem;
+    padding: 1rem 1.2rem 0 0;    
+    font-size: 1rem;    
+    
+}
+}
+
+
+
+@media only screen and ( max-width: 1024px) {
+
+img.schema_image{
+  display: none;
+
+}
+.schema_image_mobile {
+   display: block;
+   width: 80%;
+   margin:auto;  
+   position: relative;
+   max-width: 20rem;
+}
+.defect__text1,
+.defect__text2,
+.defect__text3 {
+  position: relative;
+  display: block;
+  width: 90%;
+  margin:auto;
+  text-align: left;
+  right: 0;
+  left: 0;
+  margin-bottom: 1rem;
+  
+}
+}
+
+@media (min-width: 992px) {
+
+
+#tab-four,
+label.mobile__catalog_label.fasade{
+  display: none!important;
+}
+}
+
 @media (max-width: 991px) {
+
+img.design__imаge {
+  margin:auto;
+}
+
+.general_view {
+    font-size: 1.125rem;   
+    text-align: center; 
+    margin-top: 2rem;  
+}
+
+#test{
+  display: none;
+}
+
+.general_view span {
+    font-size: 1rem;
+    text-align: center;
+    
+}
+
+a.slider_backcall {
+    display: block;
+    margin:auto;
+    text-align: center;
+    }
+.general_image {
+   margin:auto;
+   display: block;
+}
+
+
+
+#header__top {
+       
+    box-shadow:none;
+ 
+}
+
+.technology__image_container {
+  display: none;
+}
+
+
+.defect_image {
+    max-width: 350px;
+    display: block;
+    margin:auto;
+    margin-bottom: 1rem;
+}
+
+
+.cons__grid {
+    left: 30%;    
+}
+
+
+
+.header__icon {
+    width: 50%;
+    margin: auto;
+    border-right: none;
+    height: 60px;
+}
+
+.header__icon_image {   
+    max-width: 38px;
+}
+
+.main_screen__image {
+    display: none;
+}
+
+#select_product {
+    height: auto;
+    min-height:  5rem;
+}
+
+.header__activity {
+    font-size: 1.6rem;
+    line-height: 2rem;    
+    position: relative;
+    margin-top: 14%;
+    text-align: center;
+    width: 90%;
+    margin:auto;    
+}
+
+.header__order.callback {
+    max-width: 250px;
+    height: 55px;
+    display: block;
+    font-size: 0.9rem;
+    margin:auto;    
+    line-height: 55px;  
+    margin-bottom: 2rem;  
+}
+
+.header__questions {
+    font-size: 1rem;    
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+
+
+
+.header__phone {    
+    font-size: 1.1rem;    
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+#sign_up, #get_catalog {
+    min-height: 44rem;
+    position: relative;
+}
+
+
+
+.map_image {
+  display: block;
+    height: 100%;
+    min-height: 300px;
+    max-height: 320px;
+    margin:auto;
+    }
+.inner_bottomblock {
+    height: auto;
+    display: none;
+}
+
+
+
+img.showroom_image {
+    display: block;
+    max-height: 18rem;
+    margin:auto;
+    margin-bottom: 1rem;
+}
+
+
 #catalog {
     display: none;
     
 }
 #mobile_catalog {
     display: block;
-    min-height: 900px;
+    min-height: 300px;
 }
 
 /*Мобильный каталог*/
 .tab {
   position: relative;
   margin-bottom: 1px;
-  width: 100%;
+  width: 90%;
+  margin:auto;
   color: #000;
   overflow: hidden;
 }
@@ -21,7 +213,7 @@ input {
   opacity: 0;
   z-index: -1;
 }
-label {
+label.mobile__catalog_label {
   position: relative;
   display: block;
   padding: 0 0 0 1em;
@@ -29,11 +221,18 @@ label {
   font-weight: bold;
   line-height: 3;
   cursor: pointer;
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+  width: 80%;
+  max-width: 350px;
+  margin-left:auto;
+  margin-right: auto
 }
 
 .tab-content {
   max-height: 0;
-  overflow: hidden;
+  overflow-x: hidden;
   background: #fff;
   transition: max-height .35s;
 }
@@ -43,10 +242,10 @@ label {
 }
 /* :checked */
 input:checked ~ .tab-content {
-  max-height: 10em;
+  max-height: 15em;
 }
 /* Icon */
-label::after {
+label.mobile__catalog_label::after {
   position: absolute;
   right: 0;
   top: 0;
@@ -57,716 +256,287 @@ label::after {
   text-align: center;
   transition: all .35s;
 }
-input[type=checkbox] + label::after {
-  content: "+";
+input[type=checkbox] + label.mobile__catalog_label::after {
+  content: "▼";
 }
-input[type=radio] + label::after {
-  content: "\25BC";
+input[type=radio] + label.mobile__catalog_label::after {
+  content: "▲";
 }
-input[type=checkbox]:checked + label::after {
-  -webkit-transform: rotate(315deg);
-          transform: rotate(315deg);
+input[type=checkbox]:checked + label.mobile__catalog_label::after {
+ /* -webkit-transform: rotate(315deg);
+          transform: rotate(315deg);*/
+          content: "▲";
 }
-input[type=radio]:checked + label::after {
+input[type=radio]:checked + label.mobile__catalog_label::after {
   -webkit-transform: rotateX(180deg);
           transform: rotateX(180deg);
 }
 
-}
-
-
-/*@media (max-width: 1600px) {
-.vertical_text {
-opacity: 0.2;
-}
-
-
-@media only screen and (min-width: 1024px) and (max-width: 1200px){
-.navbar-nav > li > a{
-	vertical-align:middle;
-	line-height:1.5rem;
-	padding:1rem 1rem 0 0;
-	font-family:"Proxima Nova Regular";
-	font-size:1rem!important;
-	color:#fff;
-}
-}
-@media (max-width: 1023px) {
-img.header__logo {
+.phone_container,
+.contacts__content  {
 position: relative;
-}
-.navbar-default .navbar-nav > li > a {
-text-align: center;
-}
-}
-@media only screen and ( max-width: 991px) {
-
-.titles {
-font-size: 1.5rem;
-font-family: "Proxima Nova Regular";
-line-height: 1.5rem;
-}
-span.grey_text {
-color: rgb(85, 85, 85);
-} 
-.present__tag {
-display: inline-block;
-max-width: 210px;
-}
-.green_block {
-height: auto;
-height: 100%;
-}
-.beton__description_title {
-margin-top: 50px;
-}
-#test {
-background-image: url(../img/test_bbg.png);
-background-repeat: no-repeat;
-background-position: bottom center;
-background-size: cover;
-min-height: auto;
-}
-img.arrows {
-display: block;
-width: 30px;
-height: 30px;
-position: absolute;
-top: 50%;
-background-color: rgba(52,107,5, 0.7);
-opacity: 1;
-}
-img.arrows.arrow_right {
-right: -20px;
-}
-img.arrows.arrow_left {
-left: -20px;
-}
-.header_house,
-#examples,
-.present__bg
-{
-display: none;
-}
-.test__bg2 {
-opacity: 0;
-}
-#examples_m{
-display: block;
-}
-.present__title
-{
-position: relative;
-}
-.company__description {
-font-size: 17px;
-line-height: 30px;    
-width: 90%;
-margin: auto;
-margin-top: 20px;
-margin-bottom: 20px;
-}
-.image_container {
-max-width: 250px;
-margin:auto;
-padding-right: 0;
-padding-left: 0;
-}
-.review_image {
-display: block;
-height: 244px;
-position: absolute;
-max-width: 250px;
 width: 100%;
+padding-top: 10px;
 }
-.button_block {
-min-height: 10rem;
+.header__top_title,
+.footer__top_title {     
+     width: 80%;
+     margin:auto;
+     margin-top: 2rem;
 }
-.examples__title {
-line-height: 30px;
-margin-top: 30px;
-}
-.svg_icons {
-max-width: 150px;
-max-height: 150px;
-}
-.present__price {
-font-size: 18px;
-margin-top: 20px;  
-font-family: "Proxima Nova Bold"; 
-}
-.present__tag {
-margin-top: -20px;
-position: relative;
-z-index: 3;
-max-width: 170px;
-}
-.present__button {
-margin-top: 20px;
-}
-.present__image{
-display: block;
-margin:auto;
-max-height: 250px;
-}
-.advantages__title,
-h2.process__title {
-font-size: 26px;
-line-height: 28px;
-margin-bottom: 40px;
-margin-top: 40px;
-}
-.present__sections {
-position: relative;
-min-height: auto;
-}
-.present__title {
-font-size: 27px;
-
-line-height: 30px;
-}
-.prices_block {
-width: 230px;
-margin:auto;
-position: relative;
-}
-.present__price {
-text-align: center;
-}
-.old-price {
-text-align: center;
-display: inline-block;
-}
-.vertical_text {
-opacity: 0.2;
-}
-.beton__mobile2 {
-display: block;
-}
-.beton__mobile1 {
-display: none;
-}
-.orders__question {
-margin-top: 20px;
-font-size: 20px;    
-line-height: 30px;
-}
-.breaks {
-display: none;
-}
-.header__activity {
-text-align: center;
-font-size: 28px;
-line-height: 30px;
-margin:auto;
-margin-top: 23%;
+.header__logo,
+.footer__logo {
+	position: relative;
+	margin:auto;	
+	display: block;
+  left: 0;
 }
 
-#header {
-height: auto;
-min-height: 800px;
-padding-bottom: 20px;
+.usage__block {
+  margin-top: 2rem;    
+    padding: 1rem;
+    /*background-color: transparent;*/
+}
+.usage__grid {
+    display: none;
+}
+.header__icon_container {
+    margin-top: 1rem;
+    border: none;
+    padding-top: 1rem;
+    padding-bottom: 0;
+    margin-bottom: 1rem;
+}
+}
 
-}
-span.result1 {
-margin-left: 0;
-}
-.result {
-font-size: 18px;
-color: rgb( 102, 172, 42 );
-text-align: left;
-display: block;
-padding-right: 0;
-}
-.review__container {
-padding-bottom: 22px;
-}
-.process__text {
-font-size: 20px;
-font-family: "Proxima Nova Regular";
-color: rgb(81, 79, 82);
-width: 90%;
-line-height: 28px;
-text-align: justify;
-margin: auto;
-}
-}
-@media (min-width: 992px) and  (max-width: 1199px)  {
-.select_house__button {    
-width: 80%;
-max-width: 280px;
-display: block;
-font-size: 16px;    
-}
-.test__image {
-display: block;
-max-width: 181px;
-}
-.select_house__block {
-width: 100%;
-}
-.select_house__text {
-margin-left: 15px;
-margin-right: 15px;
-}
-.select__icon {
-max-width: 50px;
-display: inline-block;
-}
-.select_house__description {
-margin-left: 10px;
-margin-right: 10px;
-}
-}
+
 @media (max-width: 767px) {
-.navbar-default .navbar-toggle{
-display: none;
-}
-.process_image {
-    display: none;
-}
 
-.process_image2{
+a.callback_link {
+    border: none;
+    background-color: transparent;
+    font-size: 1.2rem;
+    position: relative;
+    padding-right: 1.25rem;   
+    float: none; 
+    text-align: center;  
+    border-bottom: none;
     display: block;
-    margin:auto;
-    max-height: 120px;
-    width: 100vw;
 }
 
-.navbar-brand{
-display: block;
-text-align: center;
-width: 100%;
-}
-a.header__phone{
-    margin-top: 2rem;
-    display: block;
-text-align: center;
-}  
-a.callback_link{
 
-border: none;
-text-decoration: underline;
-display: block;
-text-align: center;
-width: 100%;
-}
-
-span.result {
-text-align: center;
-}  
-.example__text.mobile {
-top: 30px;
-padding-left: 10px;
-}
-.beton__description_title {
-    font-size: 1.5rem;
-    line-height: 1.6rem;   
-}
-.sum_notchanged {
-display: none;
-}
-#header {
-padding-bottom: 2rem;
-}
-.green_block {
-    display: none;
-}
-
-.beton__container {
-	padding-right:0;
-	padding-left: 0;
-}
-img.beton__image {    
-    max-width: 18rem;
-}
 .phone_container  {
 position: relative;
 width: 100%;
 padding-top: 10px;
 }
-#orders {
-padding-bottom: 30px;
+.header__icon {
+    width: 70%;
+    margin: auto;
+    border-right: none;
+    height: 60px;
 }
-.header__order.callback {
-margin-bottom: 30px;
-margin-top: 30px;
-font-size: 20px;}
-.header__phone {
-color: rgb(85, 85, 85);
-text-align: right;
-}
-.callback_link {
-color: rgb(85, 85, 85);
-float: right;
-margin-bottom: 20px;
-border-bottom: 1px solid rgb(85, 85, 85);
-}
-a.header__phone:hover,
-a.header__order.callback:hover,
-a.header__phone:visited,
-a.header__order.callback:visited,
-a.header__phone:active,
-a.header__order.callback:active,
-{
-color: rgb(85, 85, 85)!important;
-}
-.orders__form {
-margin-top: 30px;
-}
-.old-price, .roubles {
-font-size: 28px;
-}
-.header__questions {
-margin-top: 30px;
-margin-bottom: 30px;
-}
-.footer__callback {
-margin:auto;
-margin-top: 20px;
-}
-.footer__phone,
-.footer__privacy, .footer__link {
-display: block;
-text-align: center;
-}
-.breaks2 {
-display: none;
-}
-.count, .questions {
-line-height: 25px;
-}
-.count {
-padding-top: 10px;
-}
-img.test__image {
-    display: none;
-}
-.answer_blocks.small,
-.answer_block.big{
-height:4.5rem;
-
-max-width:22.875rem;
-background-color:#7cc33f;
-border-radius:0.625rem;
-box-shadow:0 0.3125rem 1.313rem 0.3125rem rgba(0, 0, 0, .5);
-position:relative;
-z-index:7;
-padding-bottom:1.25rem;
-margin:auto;
-margin-bottom: 1rem;}
-div.checkbox{
-    padding-top: 0.9rem;
-}
-.answer_block.big.square {
-   height:4.9rem; 
-}
-span.answer__text.square {
-    
-   
-    width: 55%;
+.sign__title {
+    font-size: 1.6rem;
     margin:auto;
-    line-height: 1.2rem;
-    margin-top: 20px;
-    display: inline-block;
-    
-}
-}
-@media only screen and ( max-width: 500px) {
-
-
- 
-
-.svg_icons {
-max-width: 120px;
-max-height: 120px;
-}
-img.examples_slides.mobile {
-min-height: 400px;
-display: block;
-}
-.titles {
-font-size: 1.3rem;
-font-family: "Proxima Nova Regular";
-line-height: 1.3rem;
-}
-
-.col-md-12.slider__container {
-	padding-left: 0;
-	padding-right: 0;
-
-}
-.example__description {
-    font-size: 1rem;
-    font-family: "Proxima Nova Regular";
-    color: rgb(255, 255, 255);
-    line-height: 1.1rem;
-}
-.example__text.mobile {
-    top: 20px;
-    
-}
-}
-@media only screen and ( max-width: 767px) and (orientation:portrait){
-.process__text,
-.beton__titleextra
- {
-    font-size: 1rem;
-    line-height: 1.3rem;
-}    
-.container-fluid{
-padding-right: 0!important;
-padding-left: 0!important;
-}
-
-.button_block {
-    min-height: 4rem;
-}
-
-
-.header__order.callback,
-.select_house__button,
-button.present__button,
-.header__order.callback,
-a.footer__callback,
-#msform .action-button
-{
-    width: 11rem;
-    max-width: 11rem;
-    height: 3rem;
-    line-height: 3rem;
-    font-size: 1rem;
-    
-}
-.formname input[type=submit] {
-width: 14rem;
-    max-width: 14rem;
-    height: 3rem;
-    line-height: 3rem;
-    font-size: 1rem;
-}
-#orders {
-    padding-bottom: 1rem;
-}
-.prices_block {
-    width: 200px;
-    
-}
-
-
-
-.present__image {
-   
-    max-height: 200px;
-}
-
-
-.select_house__button_icon {
-    
-    padding-right: 0.5rem;
-    max-height: 1.8rem;
-}
-
-
-.reviewer__name, .review__short {
-    font-size: 1.2rem;
-    margin-top: 1rem;
-    
-}
-
-.review__container {
-    padding-bottom: 1rem;
-}
-
-.review_image {
-    display: block;
-    height: 210px;   
-    max-width: 210px;
-    
-}
-
-.advantages__title {
-    width: 80%;
-    margin:auto;
-}
-
-
-.present__button {
-    display: block;
-    margin:auto;
-}
-
-.footer__logo {
-    font-size: 1.1rem;
-    line-height: 1.2rem;
-    
-}
-
-.reviewer__name,
-.review__short {
-    font-size: 1.2rem;
-    margin-top: 2.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.count {
-    font-size: 1.5rem;
-    padding-top: 0px;
-    line-height: 1.8rem;
-    
-}
-
-
-
-
-.questions {    
-    font-size: 1.1rem;
-    line-height: 1.3rem; 
-}
-span.select_house__icon {
-    max-width:2.75rem;
-    display:block;
-   margin:auto;
-margin-bottom: 1rem;
-}
-
-.select_house__text{
-    font-size: 1.1rem;
-    display: block;
+    margin-top: 2rem;
     text-align: center;
 }
 
-.select_house__description {
-    font-size: 0.9rem;
-    text-align: left;
-    color: #414243;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
-    
-}
-
-
-
-.select_house__title,
-.advantages__title,
- h2.process__title,
-.beton__title,
-.present__title,
-h2.company__title,
-.examples__title {
-
-    font-size: 1.5rem;
-    margin-top: 2rem;
-    line-height: 1.7rem;
-    margin-bottom: 2rem;
-}
-
-.header__activity {
-    
-    font-size: 1.7rem;
-    line-height: 1.7rem;
-}
-.header__questions {
-    font-size: 1.2rem;    
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-}
-.callback_link,
-a.header__phone {    
-    font-size: 1rem;
-}
-
-.svg_icons {
-    max-width: 80px;
-}
-
- 
-
-
-.advantages__text {
-    font-size: 1.3rem;
-    line-height: 1.6rem;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-img.beton__image {
-  max-width: 12rem;
-}
-
-img.examples_slides.mobile {
-min-height: 350px;
-display: block;
-padding: 10px;
-}
-.questions__container {
-    padding-left: 0!important;
-    padding-right: 0!important;
-   
-}
-.titles {
+.sign__subtitle {
     font-size: 1rem;    
-    line-height: 1.1rem;
+    line-height: 1rem;    
+    text-align: center;
+    margin:auto;
+    margin-bottom: 2rem;
 }
 
-button.close {    
-    right: 0.625rem;
-    top: 0.625rem;
-    width: 2rem;
-    height: 2rem;    
-}
-.orders__form{padding:1rem;}
-
-
-
-.select_house__button {
-    width: 90%;
-    height: 2.625rem;
-    line-height: 1rem;
-    max-width: 17rem;
-    line-height: 2.625rem;
-   
-}
-.select_house__text {
-    font-size: 1.2rem;    
-    line-height: 1.3rem;
-    }
-
-img.arrows.arrow_left {
-    left: 5px;
 }
 
 
-img.beton__image {    
-    max-width: 16rem;
-}
+@media only screen and ( max-width: 767px) and (orientation:portrait){
+.section__title {
+    font-size: 1.5rem;
+   }
 
-
-img.arrows.arrow_right {
-    right: 5px;
-}
-
-.example__title.mobile {
+   p.showroom__subtitle {
     font-size: 1rem;
+    width: 90%;
+    margin:auto;
+    margin-bottom: 1.5rem;
 }
-#examples_m.container-fluid {
-	padding-right: 0;
-	padding-left: 0;
+
+.defect_image {
+    width: 100;
 }
-.example__description {
-    font-size: 0.9rem;    
-    line-height: 1rem;
+
+.select_item {
+    margin-top: 1rem;
 }
-span.answer__text {
-    font-size: 0.9rem;
-   
+
+.slider_title {
+    font-size: 1.5rem;    
+    margin-bottom: 1.2rem;
+    width: 90%;
+    margin:auto;
+}
+
+.section__title,
+.technology__title,
+.guarantee__title,
+.rubbish__title
+ {
+    font-size: 1.5rem;
+    margin-bottom: 1.2rem;
+    width: 90%;
+    margin:auto;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.guarantee__subtitle {
+    font-size: 1rem;
+    width: 90%;
+    margin: auto;
+    margin-top: 1.5rem;
+    text-align: center;
     
 }
-span.answer__text.square{
-     padding-top: 5px;
-    display: inline-block;
+
+
+.guarantee__block {
+    max-width: 90%;
+    min-width: 5rem;
+    height: auto;
+    border: 0.4rem solid #4277d5;
+    padding: 1rem;    
+    
+}
+
+
+.guarantee__block.left,
+.guarantee__block.right {
+    float: none;
+    margin: auto; 
+    margin-top: 1rem;   
+}
+
+
+span.gurantee__yaars {
+    font-size: 2rem;
+    text-align: center;
+    line-height: 2.1rem;
+    display: block;
+    text-align: center;
+    font-family: "Proxima Nova Bold"; 
+    
+}
+
+span.gurantee__text {
+    font-size: 1rem;
+    text-align: center;
+    display: block;  
+
+}
+
+
+
+.concurent__title,
+.company__title {
+    font-size: 1.4rem;
+    line-height: 1.2rem;
+    text-align: center;
+    display: block;
+   
+}
+
+.concurrent_block,
+.company__block {
+    margin-left: 5%;
+}
+
+.usage__text.company,
+.usage__text.concurent {
+    font-size: 1rem;   
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+}
+
+
+#custom_map {
+    display: block;
+    width: 100%;   
+    float: none; 
+    max-height: 500px;  
+
+}
+
+
+.map_image {  
+  
+    height: auto;
+    width: 100%;
+    padding-right: 0;
+    float: none;
+ 
+}
+
+
+.romb_line {
+    max-width: 1.2rem;
+    max-height: 1.2rem;
+   
+}
+.header__icon {
+    width: 90%;
+    margin: auto;    
+    height: 3rem;
+}
+
+   /*Выбор брусчатки по схеме*/
+   .catalog__subtitle, p.select__subtitle {
+    font-size: 1rem;
+    line-height: 1.1rem;
+    width: 90%;
+    margin:auto;
+    margin-bottom: 1rem;
+    
+}
+br.breaks {
+  display: none;
+}
+
+#select_product {
+   padding-bottom: 2rem;
+}
+.defect__text {
+    font-size: 1rem;
+}
+.schema_image_mobile {
+    
+    width: 70%;
+    }
+}
+
+/*Последствия неправильного выбора*/
+
+img.showroom_image {
+    width: 100%;
+}
+
+.consequences {
+    font-size: 1.125rem;
+    left: 30%;
+    top: 2rem;
+}
+span.usage__text {
+    
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+   
 }
 }
+
 
 @media only screen and ( max-width: 300px) {
 .container-fluid {
@@ -774,5 +544,5 @@ span.answer__text.square{
     overflow-x: scroll;
 
 }
-}*/
+
     
