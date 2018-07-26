@@ -72,7 +72,10 @@ $('.variants_text').click(function(e) {
 
 
 
-
+window.addEventListener('load', loadAsyncStyleSheets, false);
+$(function() {
+    $(".orders__inputs.phone").mask("+7(999) 999-99-99");
+});
 
 
 
