@@ -125,7 +125,7 @@ body {
 }*/
 
 .titles {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #fff;
     line-height: 2.2rem;
     text-align: center;
@@ -210,148 +210,6 @@ input.orders__inputs:-ms-input-placeholder {
     color: #8b8b8b !important;
 }
 
-/*div.present {
-    min-height: 31.25rem;
-    background-image: url(../img/brickwall.png);
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    z-index: 3;
-}
-
-div.present__body {
-    position: relative;
-    width: 90%;
-    height: 80%;
-    margin: auto;
-    height: 100%;
-    min-height: 37.5rem;
-    z-index: 3;
-    margin-bottom: 5.625rem;
-}
-
-.present__bg {
-    display: block;
-    position: relative;
-    z-index: 5;
-    top: 0;
-    margin: auto;
-    width: 100%;
-    max-height: 61.25rem;
-    padding-top: 3.75rem;
-}
-
-.present__title {
-    font-size: 1.688rem;
-    font-family: "Proxima Nova Regular";
-    color: rgb(43, 41, 41);
-    line-height: 1.63;
-    text-align: center;
-    z-index: 5;
-    position: absolute;
-    top: 23%;
-    display: block;
-    width: 100%;
-}
-
-.present__tag {
-    display: inline-block;
-    max-width: 15.63rem;
-}
-
-.present__title span {
-    color: #54a50e;
-}
-
-.present__sections {
-    position: absolute;
-    z-index: 5;
-    top: 30%;
-    min-height: 23.75rem;
-}
-
-.present__image {
-    display: block;
-    position: relative;
-    z-index: 3;
-    max-width: 17.5rem;
-    margin: auto;
-    margin-top: 20%;
-    margin-left: 10%;
-}
-
-.old-price,
-.roubles {
-    font-size: 2.313rem;
-    position: relative;
-    font-family: "Proxima Nova Regular";
-    color: rgb(89, 160, 29);
-    line-height: 1.189;
-    text-align: center;
-    z-index: 3;
-}
-
-.old-price:before {
-    border-bottom: 0.1875rem solid red;
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 50%;
-    transform: rotate(-12deg);
-}
-
-.present__tag {
-    margin-top: -2.5rem;
-    position: relative;
-    z-index: 3;
-}
-
-.present__button {
-    background-color: rgb(124, 195, 63);
-    box-shadow: 0.087px 0.25rem 0.5rem 0 rgba(54, 110, 6, 0.78);
-    width: 13.69rem;
-    height: 3.188rem;
-    border-radius: 1.25rem;
-    font-size: 1.438rem;
-    font-family: "Proxima Nova Regular";
-    color: rgb(255, 255, 255);
-    line-height: 1.913;
-    text-align: center;
-    margin: auto;
-    position: relative;
-    display: block;
-    margin-top: 60%;
-    outline: none;
-    z-index: 3;
-}
-
-.present__price {
-    font-size: 1.5rem;
-    font-family: "Proxima Nova Regular";
-    color: rgb(63, 63, 63);
-    line-height: 2.444;
-    text-align: left;
-    margin-top: 30%;
-}
-
-#orders {
-    padding-bottom: 5.813rem;
-    min-height: 28.13rem;
-}
-
-.orders__question {
-    font-size: 1.625rem;
-    font-family: "Proxima Nova Regular";
-    color: rgb(67, 67, 67);
-    line-height: 1.5;
-    text-align: center;
-}
-
-.orders__question span {
-    color: #7cc33f;
-}
-*/
 .orders__form {
     
     background-color: transparent;
@@ -447,18 +305,20 @@ i.fa + input {
 }
 
 .formname input[type=submit] {
-    background-color: #4277d5;
-    box-shadow: 0.087px 0.25rem 0.5rem 0 #4277d5;
-    width: 14.88rem;
-    height: 2.25rem;
-    font-size: 1rem;
-    font-family: "Proxima Nova Regular";
+    display: block;
+    max-width: 80%;
+    margin:auto;
+    margin-top: 2rem;
+    /*background-color: #4277d5;    
+    width: 13.88rem;
+    height: 2.55rem;
+    font-size: 1rem;    
     color: rgb(255, 255, 255);
     line-height: 2.25rem;
     border-radius: 1.25rem;
     text-align: center;
     display: block;
-    margin: auto;
+    margin: auto;*/
 }
 
 .formname input[disabled],
@@ -758,14 +618,9 @@ font-size: 1.125rem;
 .footer__phone:visited {
     color: #fff!important;
     outline: none!important;
-}*/
+}
 
-/*.footer__phone {
-    font-size: 1.5rem;
-    font-family: "Proxima Nova Light";
-    color: #fff;
-    text-align: left;
-}*/
+
 
 .header__order.callback,
 #msform .action-button,
@@ -776,42 +631,6 @@ font-size: 1.125rem;
     transition: 1s;
 }
 
-/*.header__order.callback:hover,
-#send:hover,
-#msform .action-button:hover .action-button:hover,
-.select_house__button:hover,
-.present__button:hover,
-.formname input[type=submit]:hover {
-    background-color: #457f14;
-    text-decoration: none;
-}*/
-
-/*.footer__callback {
-    border-width: 0.1875rem;
-    border-color: #fff;
-    border-style: solid;
-    width: 14.5rem;
-    height: 2.5rem;
-    font-size: 1rem;
-    font-family: "Proxima Nova Regular";
-    line-height: 2.5rem;
-    text-align: center;
-    display: block;
-    border-radius: 1.25rem;
-    margin-top: 0.75rem;
-    cursor: pointer;
-    display: block;
-    transition: 1s;
-    margin-bottom: 1.875rem;
-}
-
-a.footer__callback:hover {
-    background-color: #457f14;
-}
-
-a.footer__callback:hover {
-    color: #fff;
-}*/
 
 .result {
     font-size: 1.313rem;
@@ -835,45 +654,6 @@ img.white_element {
     max-width: 21.88rem;
 }
 
-/*#advantages {
-    position: relative;
-    min-height: 32.81rem;
-    background: url(../img/icon_bg.jpg) no-repeat;
-    background-size: cover;
-    background-position: left;
-    box-shadow: 0 0.3125rem 1.313rem 0.3125rem rgba(0, 0, 0, .5);
-    padding-bottom: 2.75rem;
-}
-
-img.green_element {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 20%;
-    max-width: 21.88rem;
-}
-
-.advantages_section {
-    width: 95%;
-    display: block;
-    margin: auto;
-}
-
-.advantages__title {
-    font-size: 1.938rem;
-    font-family: "Proxima Nova Regular";
-    color: #1e1e1e;
-    font-variant: small-caps;
-    line-height: 3.29;
-    text-align: center;
-}
-
-.advantages__title span {
-    color: #62a32a;
-    text-transform: uppercase;
-}
-*/
 .svg_icons {
     display: block;
     margin: auto;
@@ -945,113 +725,23 @@ h2.process__title {
     margin: auto;
 }
 
-/*#select_house {
-    background: url(../img/house_bg2.png) no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-height: 55.44rem;
-    position: relative;
-    z-index: 5;
-}
 
-.select_house__button_icon {
-    display: inline-block;
-    padding-right: 0.75rem;
-    max-height: 2.442.444rem;
-}
-
-.select__icon {
-    max-width: 3.75rem;
-    display: inline-block;
-}
-
-.select_house__text {
-    margin-left: 0.625rem;
-    margin-right: 0.625rem;
-}
-
-.select_house__title {
-    font-size: 2.063rem;
-    font-family: "Proxima Nova Regular";
-    color: rgb(254, 254, 254);
-    line-height: 1.091;
-    text-align: center;
-    margin-top: 4.5rem;
-    margin-bottom: 4rem;
-}
-
-.select_house__block {
-    width: 90%;
-    margin: auto;
-    background-color: #fff;
-    max-width: 21.63rem;
-    padding-bottom: 1.688rem;
-    margin-bottom: 0.9375rem;
-}
-
-.select_house__image {
-    display: block;
-    width: 100%;
-    max-width: 21.63rem;
-    margin-bottom: 1.375rem;
-}
-
-.select_house__button {
-    background-color: rgb(124, 195, 63);
-    box-shadow: 0.105px 0.125rem 0.3125rem 0 rgba(56, 106, 14, 0.73);
-    width: 17.5rem;
-    height: 2.625rem;
-    display: block;
-    margin: auto;
-    border-radius: 1.875rem;
-    text-align: center;
-    font-size: 1.063rem;
-    font-family: "Proxima Nova Regular";
-    color: rgb(244, 244, 244);
-    line-height: 2.625rem;
-}
-
-.select_house__button:hover {
-    color: rgb(244, 244, 244);
-}
-
-.select_house__text {
-    font-size: 1.688rem;
-    font-family: "Proxima Nova Regular";
-    color: #414243;
-    line-height: 1.333;
-    text-align: left;
-    margin-bottom: 1.375rem;
-    margin-left: 1.563rem;
-    margin-right: 1.813rem;
-    display: inline-block;
-}
-
-.select_house__text span {
-    color: rgb(91, 165, 40);
-}
-
-.select_house__description {
-    font-size: 1.063rem;
-    font-family: "Proxima Nova Regular";
-    color: rgb(101, 100, 100);
-    font-variant: small-caps;
-    line-height: 1.529;
-    text-align: left;
-    color: #414243;
-    margin-left: 1.563rem;
-    margin-right: 1.813rem;
-    display: block;
-}
-*/
-#test {
+#test,
+#test_mobile {
     background-image: url(../img/calculator/calc.jpg);
     background-repeat: repeat;
     background-position: center left;
-    background-size: contain;
-    min-height: 57.44rem;
+    background-size: contain;    
     position: relative;
 }
+#test{
+    min-height: 57.44rem;
+}
+
+#test_mobile {
+    display: none;
+}
+
 
 .social_icons__block {
     margin-bottom: 2rem;
@@ -1061,7 +751,7 @@ h2.process__title {
 
 img.social_icon {
 display: inline-block;
-max-width: 60px;
+max-width: 50px;
 margin-left: 5%;
 transition: .2s;
 }
@@ -1078,6 +768,7 @@ transform: scale(1.09);
     margin:auto;
     margin-top: 3rem;
    border: 8px solid #fff;
+   border-top: none;
    padding: 1.125rem;
 }
 
@@ -1183,9 +874,7 @@ span.answer__text {
 }
 */
 .count
-
- {
-   
+ {   
   font-size: 2rem; 
   color: rgb(255, 255, 255);
   line-height: 1.2;
@@ -1193,6 +882,16 @@ span.answer__text {
   margin-top: 4rem;
   margin-bottom: 4rem;
 }
+
+.count.mobile {
+    font-size: 1.5rem;    
+    line-height: 1.7rem;
+    max-width: 90%;
+    margin:auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
 
 
 .tests__questions {
@@ -1235,27 +934,7 @@ span.answer__text {
     display: block;
 }
 
-/*#msform .action-button {
-    cursor: pointer;
-    display: inline-block;
-    margin: 0.9375rem;
-    background-color: rgb(124, 195, 63);
-    box-shadow: 0.087px 0.25rem 0.5rem 0 rgb(54, 110, 6);
-    border-radius: 1.25rem;
-    width: 12.56rem;
-    height: 2.938rem;
-    font-size: 1.5rem;
-    font-family: "Proxima Nova Regular";
-    color: rgb(255, 255, 255);
-    line-height: 1.833;
-    text-align: center;
-    transition-duration: 1s;
-}
-*/
-/*#msform .action-button:hover {
-    background-color: #457f14;
-}
-*/
+
 .fs-title {
     font-size: 1rem;
     display: block;
@@ -1267,17 +946,17 @@ span.answer__text {
     margin-bottom: 0.8125rem;
 }
 
-.button_block {
+/*.button_block {
     min-height: 20rem;
     padding-top: 2rem;
     position: relative;
-}
+}*/
 
-#msform #send {
+/*#msform #send {
     position: relative;
-}
+}*/
 
-#examples {
+/*#examples {
     position: relative;
 }
 
@@ -1348,7 +1027,7 @@ span.answer__text {
 .example__description span {
     display: block;
     margin-left: -20%;
-}
+}*/
 
 #carousel-example-generic_m> {}
 
@@ -1568,7 +1247,7 @@ button.close {
     background-image: url('../img/close.png');
     background-size: contain;
     background-repeat: no-repeat;
-    z-index: 9999999999999999999999999999999;
+    z-index: 9999999999999999999999;
     opacity: 1;
 }
 
@@ -1674,14 +1353,11 @@ button.close {
      margin-left: 3.875rem;
 }
 
-.header__top_title {
-    /*font-size: 1.125rem;*/
+.header__top_title {  
     font-size: 1rem;
     color: rgb(51, 51, 51);
-    text-align: center;
-   
-    margin-top: 64px;
-   
+    text-align: center;   
+    margin-top: 64px; 
 
 }
 
@@ -1721,6 +1397,7 @@ a.callback_link {
     color: #4277d5; 
     border-bottom: 1px solid #dae2f5;
     display: inline-block;
+    
 }
 
 .header__activity {
@@ -2506,11 +2183,7 @@ display: none;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    float: left;
-   /* display: block;
-    width: 100%;*/
-   /* max-width: 300px;*/
-    /*float: left;*/
+    float: left; 
 }
 
 
@@ -2597,16 +2270,11 @@ p.select__subtitle {
 }
 
 
-
-
-
-
 /*Опросник*/ 
 
 .plan__container {
 width: 90%;
 margin:auto;
-/*background-color: orange;*/
 height: 500px;
 margin-bottom: 6.25rem;
 }
@@ -2614,10 +2282,6 @@ margin-bottom: 6.25rem;
 .plan__image {
 width: 100%;
 margin:auto;
-
-/*height: 480px;*/
-/*margin-top: 10px;*/
-/*max-width: 900px;*/
 }
 
 .test_question {
@@ -2627,19 +2291,27 @@ margin:auto;
   font-family: "Proxima Nova Semibold";
   border-left: 2px solid #fff;
   margin-left:  0.875rem;
-  padding-left: 0.875rem;
-  
+  padding-left: 0.875rem;  
 }
+
+.test_question.mobile {
+       font-size: 1.2rem;  
+   display: block;
+   text-align: center;
+  
+  border-left: none;
+  margin:auto;
+  margin-bottom: 1.5rem;
+  padding-left: 0; 
+}
+
 
 .question_number {
   font-size: 1.5rem; 
   display: block;  
   color: rgb(255, 255, 255);
   line-height: 4rem;
-  /*-moz-transform: matrix( 0.98192633188525,0,0,0.98680218332392,0,0);
-  -webkit-transform: matrix( 0.98192633188525,0,0,0.98680218332392,0,0);
-  -ms-transform: matrix( 0.98192633188525,0,0,0.98680218332392,0,0);*/
- 
+  
 }
 .variants_text {
   font-size: 1.125rem;
@@ -2815,28 +2487,33 @@ display: block;
 .color__card {
     background-color: #fff;
     max-width: 254px;
-    min-height: 158px;
+    min-height: 160px;
     width: 90%;
     margin:auto;
     border: 3px solid transparent;
    
-    margin-bottom: 30px;
+    margin-bottom: 34px;
     margin-top: 30px;
     display: inline-block;
+    box-sizing: border-box;
 }
 
 .type__card.active, 
 .color__card.active {
-border: 3px solid red;
+opacity: 0.8;
+
+
 }
 
 .type__image, 
 .color__image {
     display: block;
     margin:auto;
-    height: 144px;
-    width: 154px;
+    /*height: 144px;*/
+    max-width: 154px;
     margin-top: -28px;
+    width: 90%;
+    margin:auto;
 }
 
 
@@ -3014,3 +2691,73 @@ span.usage__text.days:before{
     color: #4277d5;
      font-family: "Proxima Nova Semibold";
 }
+
+.mobile__container {
+    width: 80%;
+    display: block;
+    max-width: 400px;
+    margin:auto;    
+    float:none;
+}
+
+img.color__test,
+img.type__test {
+    display: inline-block;
+    max-width: 3.5rem;
+    /*overflow:hidden;*/
+    margin: 0.8rem;
+    border: 3px solid #fff;
+    cursor: pointer;
+   
+}
+
+img.color__test:hover,
+img.type__test:hover{
+
+ opacity: 0.7;
+}
+
+
+
+.mobile__text {
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.square__test {
+    font-size: 1rem;
+    display: block;
+    text-align: center;
+    color:#fff;
+}
+
+
+.square__test.mobile {
+    font-size: 1rem;
+    display: block;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;   
+    margin-bottom: 0.875rem;
+    transition: .2s;
+
+}
+
+.square__test.mobile:hover {
+opacity: 0.9;
+font-size: 1.1rem;
+}
+
+a.nav-link.active > span.opened_tab{
+    display: inline-block;
+}
+
+a.nav-link.active > span.closed_tab{
+    display: none;
+}
+
+span.closed_tab,
+span.opened_tab {
+    padding-right: 1rem;
+} 

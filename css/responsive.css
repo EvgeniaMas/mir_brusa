@@ -1,19 +1,77 @@
 @media only screen and ( max-width: 1200px) {
 .navbar-nav > li > a {    
     line-height: 1.2rem;
-    padding: 1rem 1.2rem 0 0;    
+    padding: 1rem 1.2rem 0 0; 
+    margin-bottom: 2rem;   
     font-size: 1rem;    
     
 }
+
+.phone_container {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 15%;
+    color: #000;
+    margin-right: 0;
+}
+}
+
+@media only screen and ( max-width: 1100px) {
+
+#test {
+  display: none;
+  background-color: red;
+}
+
+#test_mobile{
+  display: block;
+  padding-bottom: 2rem;
+
+}
+}
+
+@media only screen and ( max-width: 1024px) {
+.defect__text {
+    font-size: 1rem;
+}
+
+.technology__image_container {
+  display: none;
+}
+}
+
+@media (min-width: 992px) {
+#tab-four,
+label.mobile__catalog_label.fasade{
+  display: none!important;
+}
+}
+
+@media (max-width: 991px) {
+.guarantee__block {
+   /* max-width: 50%;*/
+    min-width: 5rem;
+    height: auto;  
+    margin-bottom: 1rem;  
+}
+
+.guarantee__block.left,
+.guarantee__block.right {
+    float: none;
+    margin: auto; 
+    margin-top: 1rem;   
 }
 
 
 
-@media only screen and ( max-width: 1024px) {
-
 img.schema_image{
   display: none;
-
+}
+.sign__title {
+    font-size: 2rem;   
+    margin-top: 3rem;
+   
 }
 .schema_image_mobile {
    display: block;
@@ -35,19 +93,42 @@ img.schema_image{
   margin-bottom: 1rem;
   
 }
+.footer {
+    position: padding-bottom: 1rem;
 }
 
-@media (min-width: 992px) {
-
-
-#tab-four,
-label.mobile__catalog_label.fasade{
-  display: none!important;
+#usage,
+#design {
+    padding-bottom: 1.5rem;
 }
+#custom_map {
+    display: block;
+    width: 100%;   
+    float: none; 
+    max-height: 500px;  
 }
-
-@media (max-width: 991px) {
-
+.map_image {  
+    height: auto;
+    width: 100%;
+    padding-right: 0;
+    float: none;
+}
+.info_text,
+.info_name {
+    font-size: 1rem;
+    color: #fff;
+}
+.vertical_text {
+    
+    transform: none;
+    text-align: center;  
+     padding-left: 0;
+     margin-top: 1rem;
+}
+ol#design_sliders.carousel-indicators {
+  position: relative;
+  margin-top: 2rem;
+}
 img.design__imаge {
   margin:auto;
 }
@@ -57,17 +138,10 @@ img.design__imаge {
     text-align: center; 
     margin-top: 2rem;  
 }
-
-#test{
-  display: none;
-}
-
 .general_view span {
     font-size: 1rem;
-    text-align: center;
-    
+    text-align: center;    
 }
-
 a.slider_backcall {
     display: block;
     margin:auto;
@@ -77,41 +151,24 @@ a.slider_backcall {
    margin:auto;
    display: block;
 }
-
-
-
-#header__top {
-       
-    box-shadow:none;
- 
+#header__top {       
+    box-shadow:none; 
 }
-
-.technology__image_container {
-  display: none;
-}
-
-
 .defect_image {
     max-width: 350px;
     display: block;
     margin:auto;
     margin-bottom: 1rem;
 }
-
-
 .cons__grid {
     left: 30%;    
 }
-
-
-
 .header__icon {
     width: 50%;
     margin: auto;
     border-right: none;
     height: 60px;
 }
-
 .header__icon_image {   
     max-width: 38px;
 }
@@ -119,22 +176,19 @@ a.slider_backcall {
 .main_screen__image {
     display: none;
 }
-
 #select_product {
     height: auto;
     min-height:  5rem;
 }
-
 .header__activity {
     font-size: 1.6rem;
     line-height: 2rem;    
-    position: relative;
-    margin-top: 14%;
+    position: relative;    
     text-align: center;
     width: 90%;
-    margin:auto;    
+    margin:auto;  
+    margin-top: 17%;  
 }
-
 .header__order.callback {
     max-width: 250px;
     height: 55px;
@@ -144,30 +198,24 @@ a.slider_backcall {
     line-height: 55px;  
     margin-bottom: 2rem;  
 }
-
+span.usage__text.days {
+    display: none;
+}
 .header__questions {
     font-size: 1rem;    
     margin-top: 1rem;
     margin-bottom: 2rem;
     text-align: center;
 }
-
-
-
-
 .header__phone {    
     font-size: 1.1rem;    
     text-align: center;
     margin-top: 1.5rem;
 }
-
 #sign_up, #get_catalog {
     min-height: 44rem;
     position: relative;
 }
-
-
-
 .map_image {
   display: block;
     height: 100%;
@@ -179,20 +227,14 @@ a.slider_backcall {
     height: auto;
     display: none;
 }
-
-
-
 img.showroom_image {
     display: block;
     max-height: 18rem;
     margin:auto;
     margin-bottom: 1rem;
 }
-
-
 #catalog {
-    display: none;
-    
+    display: none;    
 }
 #mobile_catalog {
     display: block;
@@ -294,8 +336,7 @@ padding-top: 10px;
 
 .usage__block {
   margin-top: 2rem;    
-    padding: 1rem;
-    /*background-color: transparent;*/
+    padding: 1rem;  
 }
 .usage__grid {
     display: none;
@@ -308,10 +349,45 @@ padding-top: 10px;
     margin-bottom: 1rem;
 }
 }
-
-
 @media (max-width: 767px) {
+h2.get__account {
+    color: #fff;
+    font-size: 1.5rem;
+    width: 90%;
+    margin:auto;
+}
 
+.header__activity {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    position: relative;    
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    margin-top: 14%;
+}
+.usage__block {    
+    box-shadow: none;
+    max-width: 43.56rem;
+}
+.navbar-default .navbar-nav > li > a{
+  text-align: center;
+  text-decoration: none;
+  transition: .3s;
+  padding-bottom: 1rem;
+}
+.navbar-default .navbar-nav > li > a:hover{
+  text-align: center;
+  text-decoration: none;
+  color:#fff;
+  background-color: #4277d5;
+}
+.navbar-nav > li > a {    
+    line-height: 1rem;
+    padding: 1rem 1.2rem 0 0; 
+    margin-bottom: 0.5rem;   
+    font-size: 1rem;
+}
 a.callback_link {
     border: none;
     background-color: transparent;
@@ -323,8 +399,6 @@ a.callback_link {
     border-bottom: none;
     display: block;
 }
-
-
 .phone_container  {
 position: relative;
 width: 100%;
@@ -342,7 +416,6 @@ padding-top: 10px;
     margin-top: 2rem;
     text-align: center;
 }
-
 .sign__subtitle {
     font-size: 1rem;    
     line-height: 1rem;    
@@ -350,39 +423,81 @@ padding-top: 10px;
     margin:auto;
     margin-bottom: 2rem;
 }
+}
+@media only screen and ( max-width: 767px) and (orientation:portrait){
+ .header__activity {
+    font-size: 1.4rem;
+    line-height: 1.5rem;    
+    width: 90%;   
+}
 
+.header__icon_text {
+    font-size: 0.9rem;    
+    margin-left: 28px;
+    line-height: 1rem;    
 }
 
 
-@media only screen and ( max-width: 767px) and (orientation:portrait){
 .section__title {
     font-size: 1.5rem;
    }
-
+   .info_text,
+   .info_name {
+    font-size: 0.9rem;
+    color: #fff;
+}
+.usage__contant {
+    position: relative;   
+    min-height: auto;
+    margin-bottom: 1rem;
+}
+label.mobile__catalog_label {
+    position: relative;  
+    font-size: 0.9rem;
+    text-align: center;
+    width: 95%;    
+}
+span.number {
+    display: block;
+    margin:auto;
+    margin-bottom: 0.9rem;
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    font-size: 1rem;    
+}
+.design__subtitle,
+.technology__title {
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 1.5rem;
+}
+#usage, #design {
+    padding-bottom: 0.5rem;
+}
+#sign_up, #get_catalog {
+    min-height: 40rem;    
+}
    p.showroom__subtitle {
     font-size: 1rem;
     width: 90%;
     margin:auto;
     margin-bottom: 1.5rem;
 }
-
 .defect_image {
     width: 100;
 }
-
 .select_item {
     margin-top: 1rem;
 }
-
 .slider_title {
-    font-size: 1.5rem;    
-    margin-bottom: 1.2rem;
+    font-size: 1.3rem;   
     width: 90%;
     margin:auto;
+     margin-bottom: 1.2rem;
 }
-
 .section__title,
-.technology__title,
 .guarantee__title,
 .rubbish__title
  {
@@ -393,119 +508,70 @@ padding-top: 10px;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
 }
-
 .guarantee__subtitle {
     font-size: 1rem;
     width: 90%;
     margin: auto;
     margin-top: 1.5rem;
-    text-align: center;
-    
+    text-align: center;    
 }
-
-
 .guarantee__block {
     max-width: 90%;
     min-width: 5rem;
     height: auto;
     border: 0.4rem solid #4277d5;
-    padding: 1rem;    
-    
+    padding: 1rem; 
 }
-
-
-.guarantee__block.left,
-.guarantee__block.right {
-    float: none;
-    margin: auto; 
-    margin-top: 1rem;   
-}
-
-
 span.gurantee__yaars {
     font-size: 2rem;
     text-align: center;
     line-height: 2.1rem;
     display: block;
     text-align: center;
-    font-family: "Proxima Nova Bold"; 
-    
+    font-family: "Proxima Nova Bold";     
 }
-
 span.gurantee__text {
     font-size: 1rem;
     text-align: center;
     display: block;  
-
 }
-
-
-
 .concurent__title,
 .company__title {
     font-size: 1.4rem;
     line-height: 1.2rem;
     text-align: center;
-    display: block;
-   
+    display: block;   
 }
-
 .concurrent_block,
 .company__block {
     margin-left: 5%;
 }
-
 .usage__text.company,
 .usage__text.concurent {
     font-size: 1rem;   
     margin-bottom: 1rem;
     padding-left: 1.5rem;
 }
-
-
-#custom_map {
-    display: block;
-    width: 100%;   
-    float: none; 
-    max-height: 500px;  
-
-}
-
-
-.map_image {  
-  
-    height: auto;
-    width: 100%;
-    padding-right: 0;
-    float: none;
- 
-}
-
-
 .romb_line {
     max-width: 1.2rem;
-    max-height: 1.2rem;
-   
+    max-height: 1.2rem;   
 }
 .header__icon {
     width: 90%;
     margin: auto;    
     height: 3rem;
 }
-
    /*Выбор брусчатки по схеме*/
    .catalog__subtitle, p.select__subtitle {
     font-size: 1rem;
     line-height: 1.1rem;
     width: 90%;
     margin:auto;
-    margin-bottom: 1rem;
-    
+    margin-bottom: 1rem;    
 }
 br.breaks {
   display: none;
 }
-
 #select_product {
    padding-bottom: 2rem;
 }
@@ -515,7 +581,7 @@ br.breaks {
 .schema_image_mobile {
     
     width: 70%;
-    }
+    /*}*/
 }
 
 /*Последствия неправильного выбора*/

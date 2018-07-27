@@ -1,7 +1,7 @@
 <?php
 {
-  $mail="repvol2015@gmail.com"; // e-mail куда уйдет письмо
-  $title="Заявка с сайта Град Строй ".$_SERVER["SERVER_NAME"]; // заголовок(тема) письма
+  $mail="levakiril@yandex.ru"; // e-mail куда уйдет письмо
+  $title="Заявка с сайта Мир Брусчатки ".$_SERVER["SERVER_NAME"]; // заголовок(тема) письма
   $purpose=$_POST["purpose"];
   $phone=$_POST["user_phone"]; 
   $mess="<b>Пользователь оставил заявку, его (ее) телефон:</b> $phone<br>";

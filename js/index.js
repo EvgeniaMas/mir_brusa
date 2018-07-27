@@ -66,21 +66,19 @@ $(".color__card").on("click", function(e) {
 });
 
 
-$("#sms").on("click", function(e) {
+$(".sms").on("click", function(e) {
 document.getElementById('social').value = 'cмс'; 
 });
 
-$("#telegram").on("click", function(e) {
+$(".telegram").on("click", function(e) {
 document.getElementById('social').value = 'Telegram'; 
 });
-$("#viber").on("click", function(e) {
+$(".viber").on("click", function(e) {
 document.getElementById('social').value = 'Viber'; 
 });
-$("#watsap").on("click", function(e) {
+$(".watsap").on("click", function(e) {
 document.getElementById('social').value = 'Watsap'; 
 });
-
-
 
 
 $('.next').click(function(){ 
@@ -91,61 +89,64 @@ count++;
 if (count>1){ 
 $('.count').css('opacity', '0'); 
 }    
-if (count>3){ 
-$('.next').hide('slow');
-
-$('#send').fadeIn(1000); 
-}
 current_fs = next_fs;
 });   
 
 
-
-
-
 $(".back").click(function(){
 var previous_fs = $(current_fs).prev();
-// $("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
 $(current_fs).removeClass('visible');
 previous_fs.addClass('visible');
 current_fs.hide('slow');     
 previous_fs.fadeIn(1000);
 current_fs = previous_fs;
 count--;
-if (count<4){ 
-$('#send').hide('slow'); 
-$('.next').fadeIn(1000);      
-}
-
-if (count==1){
-$('#previous').hide('slow'); 
-}
-if (count<2){ 
-$('#previous').hide('slow'); 
-}
 });
 
 
 
-$('#send').click(function(){
-var form = $('#msform');
-form.find('.compulsory').addClass('empty_field');
 
-form.find('.compulsory').each(function(){
-if($(this).val() != ''){
-$(this).removeClass('empty_field');
-} else {
-$(this).addClass('empty_field');        
-}
-var sizeEmpty = form.find('.empty_field').size(); 
-
-if(sizeEmpty > 0){
-form.find('.empty_field').css({'border-color':'#d8512d'});
-
-return false;
-}    	
+$('.nav-tabs').click(function(e){	
+	var link =e.target;
+	console.log(link);
+	$(link).addClass('active');
 });
+
+
+
+
+$('.nav-tabs').click(function(e){
+	var closed_tab =$('.closed_tab');
+	var opened_tab =$('.opened_tab');
+	closed_tab.css('display', 'inline-block');
+	opened_tab.css('display', 'none');
+	var tab = $(e.target).find('.closed_tab');
+	var tab2 = $(e.target).find('.opened_tab');
+    tab.css('display', 'none');
+    tab2.css('display', 'inline-block');
 });
+
+
+
+// $('#send').click(function(){
+// var form = $('#msform');
+// form.find('.compulsory').addClass('empty_field');
+
+// form.find('.compulsory').each(function(){
+// if($(this).val() != ''){
+// $(this).removeClass('empty_field');
+// } else {
+// $(this).addClass('empty_field');        
+// }
+// var sizeEmpty = form.find('.empty_field').size(); 
+
+// if(sizeEmpty > 0){
+// form.find('.empty_field').css({'border-color':'#d8512d'});
+
+// return false;
+// }    	
+// });
+// });
 
 $(document).ready(function(){
 $('.get_offer').click( function(){ 
@@ -160,3 +161,42 @@ return false;
 $(function() {
     $(".orders__inputs.phone").mask("+7(999) 999-99-99");
 });
+
+$('.square__test').click( function(e){ 
+document.getElementById('square_mobile').value = $(this).text();
+ var next_fs = current_fs.next();
+$(current_fs).removeClass('visible');
+next_fs.addClass('visible');
+count++;
+if (count>1){ 
+$('.count').css('opacity', '0'); 
+}    
+current_fs = next_fs;
+});
+
+$('.color__test').click( function(e){ 
+ document.getElementById('color_mobile').value = $(this).attr('alt');
+ var next_fs = current_fs.next();
+$(current_fs).removeClass('visible');
+next_fs.addClass('visible');
+count++;
+if (count>1){ 
+$('.count').css('opacity', '0'); 
+}    
+current_fs = next_fs;
+});
+
+$('.type__test').click( function(e){ 
+ document.getElementById('type_mobile').value = $(this).attr('alt');
+ var next_fs = current_fs.next();
+$(current_fs).removeClass('visible');
+next_fs.addClass('visible');
+count++;
+if (count>1){ 
+$('.count').css('opacity', '0'); 
+}    
+current_fs = next_fs;
+});
+
+
+

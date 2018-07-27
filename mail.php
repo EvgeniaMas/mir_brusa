@@ -6,7 +6,7 @@
 
  //$mail="levakiril@yandex.ru, urban_stroy@mail.ru";  e-mail куда уйдет письмо
 
-  $mail="repvol2015@gmail.com";
+  $mail="levakiril@yandex.ru";
 
   $title="Заявка с сайта с сайта ".$_SERVER["SERVER_NAME"]; // заголовок(тема) письма
 
